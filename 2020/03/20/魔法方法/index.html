@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="listem">
+    
+    
+    
+    
+    
+    
+    <title>魔法方法 | Hexo</title>
+    <link href="https://github.com/18639710721/18639710721.github.io" rel="prefetch" />
+
+    
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/aos.css">
+<link rel="stylesheet" href="/css/style.css">
+
+    
+<script src="/js/jquery.min.js"></script>
+
+    
+<script src="/js/bootstrap.min.js"></script>
+
+    
+<script src="/js/aos.js"></script>
+
+    
+<script src="/js/highslide/highslide-full.min.js"></script>
+
+    
+<link rel="stylesheet" href="/js/highslide/highslide.css">
+
+    <style type="text/css">
+        @media (max-width: 768px) {
+            body {
+                background-color: #f0f0f0;
+                background: url('/imgs/xsbg.gif');
+                background-attachment: fixed;
+            }
+        }
+    </style>
+    
+    <!--<script type="text/javascript">
+      if (document.images) {
+        var avatar = new Image();
+        avatar.src = '/imgs/avatar.jpg'
+        var previews = 'preview1.jpg,preview2.jpg,preview3.jpg,preview4.jpg'.split(',')
+        var previewsPreLoad = []
+        for(var i = 0; i < length; i++) {
+          previewsPreLoad.push(new Image())
+          previewsPreLoad[previewsPreLoad.length - 1].src = '/imgs/preview' + previews[i]
+        }
+      }
+    </script>-->
+<meta name="generator" content="Hexo 4.2.0"></head>
+<body>
+    <!-- 背景轮播图功能 -->
+    <section class="hidden-xs">
+    <ul class="cb-slideshow">
+        <li><span>天若</span></li>
+        <li><span>有情</span></li>
+        <li><span>天亦老</span></li>
+        <li><span>我为</span></li>
+        <li><span>长者</span></li>
+        <li><span>续一秒</span></li>
+    </ul>
+</section>
+    <!-- 欧尼酱功能, 谁用谁知道 -->
+    
+    <div class="gal-menu gal-dropdown">
+    <div class="circle" id="gal">
+        <div class="ring">
+            <a href="https://github.com/18639710721/18639710721.github.io" class="menuItem" style="left: 50%; top: 15%;">首页</a>
+            
+            <a class="menuItem" style="left: 80.3109%; top: 32.5%;">下一页</a>
+            
+            <a href="/archives" class="menuItem" style="left: 80.3109%; top: 67.5%;">归档</a>
+            <a href="/about" class="menuItem" style="left: 50%; top: 85%;">关于</a>
+            <a href="/message" class="menuItem" style="left: 19.6891%; top: 67.5%;">留言板</a>
+
+            
+            <a class="menuItem" style="left: 19.6891%; top: 32.5%;">上一页</a>
+            
+        </div>
+        <audio id="audio" src="/imgs/oni.mp3"></audio>
+    </div>
+</div>
+    
+    <header class="navbar navbar-inverse" id="gal-header">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed"
+                    data-toggle="collapse" data-target=".bs-navbar-collapse"
+                    aria-expanded="false">
+                <span class="fa fa-lg fa-reorder"></span>
+            </button>
+            <a href="https://github.com/18639710721/18639710721.github.io">
+                
+                <style>
+                    #gal-header .navbar-brand {
+                        height: 54px;
+                        line-height: 24px;
+                        font-size: 28px;
+                        opacity: 1;
+                        background-color: rgba(0,0,0,0);
+                        text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #228DFF,0 0 35px #228DFF,0 0 40px #228DFF,0 0 50px #228DFF,0 0 75px #228DFF;
+                    }
+                </style>
+                <!-- 这里使用文字(navbar_text or config.title) -->
+                <div class="navbar-brand">Hexo</div>
+                
+            </a>
+        </div>
+        <div class="collapse navbar-collapse bs-navbar-collapse">
+            <ul class="nav navbar-nav" id="menu-gal">
+                
+                
+                <li class="">
+                    <a href="/">
+                        <i class="fa fa-home"></i>首页
+                    </a>
+                </li>
+                
+                
+                
+                <li class="">
+                    <a href="/archives">
+                        <i class="fa fa-archive"></i>归档
+                    </a>
+                </li>
+                
+                
+                
+                
+                <li class="">
+                    <a href="/categories">
+                        <i class="fa fa-list"></i>分类
+                    </a>
+                </li>
+                
+                
+                
+                
+                
+                <li class="">
+                    <a href="/tags">
+                        <i class="fa fa-tags"></i>标签
+                    </a>
+                </li>
+                
+                
+                
+                
+                <li class="">
+                    <a href="/about">
+                        <i class="fa fa-user"></i>关于我
+                    </a>
+                </li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</header>
+    <div id="gal-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 gal-right" id="mainstay">
+                    
+<article class="article well article-body" id="article">
+    <div class="breadcrumb">
+        <i class="fa fa-home"></i>
+        <a href="https://github.com/18639710721/18639710721.github.io">Hexo</a>
+        >
+        <span>魔法方法</span>
+    </div>
+    <!-- 大型设备详细文章 -->
+    <div class="hidden-xs">
+        <div class="title-article">
+            <h1>
+                <a href="/2020/03/20/%E9%AD%94%E6%B3%95%E6%96%B9%E6%B3%95/">魔法方法</a>
+            </h1>
+        </div>
+        <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-calendar"></i> 2020-03-20
+            </span>
+            
+        </div>
+    </div>
+    <!-- 小型设备详细文章 -->
+    <div class="visible-xs">
+        <center>
+            <div class="title-article">
+                <h4>
+                    <a href="/2020/03/20/%E9%AD%94%E6%B3%95%E6%96%B9%E6%B3%95/">魔法方法</a>
+                </h4>
+            </div>
+            <p>
+                <i class="fa fa-calendar"></i> 2020-03-20
+            </p>
+            <p>
+                
+                
+            </p>
+        </center>
+    </div>
+    <div class="content-article">
+        <h3 id="魔法方法"><a href="#魔法方法" class="headerlink" title="魔法方法"></a>魔法方法</h3><h4 id="魔法方法介绍"><a href="#魔法方法介绍" class="headerlink" title="魔法方法介绍"></a>魔法方法介绍</h4><ul>
+<li><strong>doc</strong> 用来查看类的<strong>说明文档</strong><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">print(dict.__doc__)</span><br><span class="line">print(list._doc__)</span><br><span class="line">print(tuple.__doc__)  <span class="comment"># 通过类名调用</span></span><br><span class="line"></span><br><span class="line">li = list(<span class="string">"人生无聊才敲代码"</span>)</span><br><span class="line">print(li.__doc__)  <span class="comment"># 通过实例调用</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Demo</span><span class="params">(object)</span>:</span>  </span><br><span class="line">    <span class="string">"""   </span></span><br><span class="line"><span class="string">    Everybody in this country should learn how to program a computer, </span></span><br><span class="line"><span class="string">    because it teachers you how to think </span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">passthink = Demo()</span><br><span class="line">print(think.__doc__)  <span class="comment"># 自定义一个类调用查看文档说明</span></span><br><span class="line">print(Demo().__doc__)</span><br></pre></td></tr></table></figure></li>
+<li><strong>module</strong> 用来查看当前操作的类所在的模块<br>一个.py文件就是一个模块</li>
+<li><em>当执行模块是类所在模块时，执行结果为<strong>main</strong>.否则，执行结果是类所在模块的名称*</em><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">A.py</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Demo</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line">print(Demo().__module__)  <span class="comment">#__main__ 当前所在模块</span></span><br><span class="line"></span><br><span class="line">B.py</span><br><span class="line"><span class="keyword">import</span> A</span><br><span class="line">A <span class="comment"># 模块所在名称</span></span><br></pre></td></tr></table></figure></li>
+<li><strong>class</strong>查看当前对象的类<br>  类也是对象，Demo是type类的对象，d是Demo类的对象<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Demo</span><span class="params">(object)</span>:</span> </span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line">d = Demo()</span><br><span class="line">print(Demo().__module__)  <span class="comment">#__main__ 当前所在模块</span></span><br><span class="line">print(Demo().__class__)  <span class="comment">#&lt;class '__main__.Demo'&gt;   Demo() 加扩号就是这里实例了 赋值给d 对象名 = 类名</span></span><br><span class="line">print(Demo.__class__)    <span class="comment">#&lt;class 'type'&gt;  Demo这个类是type类的对象 元类</span></span><br><span class="line">print(d.__class__)       <span class="comment">#&lt;class '__main__.Demo'&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li><strong>dict</strong> 用来获取类或者实例的属性，返回值为字典<br>对象.<strong>dict</strong>获取的是普通字段, <em>只有普通字段存储在对象中</em>，除普通字段以为的成员都存储在类中，所有通过类.<strong>dict</strong>来获取<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Students</span><span class="params">(object)</span>:</span></span><br><span class="line">    students_count = <span class="number">0</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span>       </span><br><span class="line">        self.name = <span class="string">"赵日天"</span>        </span><br><span class="line">        self.__age = <span class="number">18</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">test</span><span class="params">(self)</span>:</span>  </span><br><span class="line">        print(<span class="string">"test"</span>)</span><br><span class="line"></span><br><span class="line">zhaoritian = Students()</span><br><span class="line">print(zhaoritian.__dict__)  <span class="comment"># &#123;'name': '赵日天', '_Students__age': 18&#125; 只有普通字段储存在类中</span></span><br><span class="line">print(Students.__dict__)    <span class="comment">#  除了普通字段的其他成员</span></span><br></pre></td></tr></table></figure></li>
+<li><strong>del</strong>()方法，析构方法。当由类创建的实例对象，被删除或者在内存中被释放，将会自动触发执行<br>当<strong>代码全部执行完毕</strong>才自动触发<strong>del</strong>() ，如果需要提前触发，则需要通过del关键字，删除<strong>所有对象</strong>后触发<strong>del</strong>()<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Demo</span><span class="params">(object)</span>:</span>    </span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__del__</span><span class="params">(self)</span>:</span></span><br><span class="line">        print(<span class="string">"我被触发了"</span>)</span><br><span class="line"></span><br><span class="line">d = Demo()</span><br><span class="line">dd = d</span><br><span class="line">print(<span class="string">"="</span>*<span class="number">10</span>)</span><br><span class="line"><span class="keyword">del</span> d    <span class="comment"># 使用del时必须删除所有对象才会触发 可以删除dd</span></span><br><span class="line"><span class="keyword">del</span> dd</span><br><span class="line">print(<span class="string">"="</span>*<span class="number">10</span>)  <span class="comment"># 代码执行完毕自动内存释放自动触发</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>call</strong>()方法用于将对象变成一个可调用的对象，也就是说，当一个类中<strong>call</strong>()方法时，其实例化得到的对象便是可调用的(callable)<br>带()是调用 不带是引用，@property<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Demo</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__call__</span><span class="params">(self, *args, **kwargs)</span>:</span></span><br><span class="line">        print(<span class="string">"我可以被调用了"</span>)</span><br><span class="line">        </span><br><span class="line">d = Demo()</span><br><span class="line">print(d)   <span class="comment">#&lt;__main__.Demo object at 0x000002D2B1A6F108&gt;</span></span><br><span class="line">d()   <span class="comment"># 调用的时候不用打印，因为返回值为None   我可以被调用了</span></span><br></pre></td></tr></table></figure></li>
+<li><strong>new</strong>()方法用于创建与返回一个对象。在类准备将自身实例化时调用</li>
+</ul>
+</li>
+</ul>
+<p>1.<em>new_</em>()和<strong>init</strong>()的区别<br>new__方法，它会构造一个对象并返回，<strong>init</strong> 接收构造的对象并对其进行初始化。<br>2.init__ 与 <strong>new</strong> 的关系总结：作用方面，<strong>new</strong>负责构造对象，<strong>init</strong> 负责初始化对象；执行顺序方面，<strong>new</strong>先执行，<strong>init</strong> 后执行；返回值方面，<strong>new</strong>返回构造的对象，<strong>init</strong> 只能返回 None；<br>     3.<strong>init</strong>是实例方法，<strong>new</strong>是静态方法<br>     4.返回对象自动触发<strong>init</strong>()方法，<strong>init</strong>()方法当中的self，实际上就是<strong>new</strong>返回的实例，就是该对象。</p>
+<ul>
+<li>承一些不可变的class时(比如int, str, tuple)，<strong>new</strong>方法提供了自定义这些类的实例化过程的途径。<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">NewInt</span><span class="params">(int)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__new__</span><span class="params">(cls, value)</span>:</span>        </span><br><span class="line">        print(<span class="string">'调用__new__方法'</span>)</span><br><span class="line">        <span class="keyword">return</span> int.__new__(cls, abs(value)) </span><br><span class="line">a = NewInt(<span class="number">-4.822</span>)</span><br><span class="line">print(a)</span><br></pre></td></tr></table></figure>
+<h5 id="单例模式"><a href="#单例模式" class="headerlink" title="单例模式"></a>单例模式</h5><ul>
+<li>该类只有一个实例且该实例易于外界访问</li>
+<li>应用：控制实例个数并</li>
+<li>如何用代码实现单例模式呢？<br>对象不存在时，–&gt; 去创建对象<br>对象存在时–&gt;返回已经创建的对象<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 用用类的静态属性当作标识符查看对象是否存在 无论是否为None都返回新创建的对象</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Students</span><span class="params">(object)</span>:</span></span><br><span class="line">    __bishi = <span class="literal">None</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__new__</span><span class="params">(cls, *args, **kwargs)</span>:</span>       </span><br><span class="line">    <span class="comment"># return super().__new__(cls)        </span></span><br><span class="line">    <span class="keyword">if</span> cls.__bishi == <span class="literal">None</span>:   <span class="comment"># 类属性通过类名调用 为None则创造一个新的对象           </span></span><br><span class="line">        __bishi = super().__new__(cls)</span><br><span class="line">        <span class="keyword">return</span> cls.__bishi    <span class="comment"># 必须创建并返回一个对象        </span></span><br><span class="line">    <span class="keyword">else</span>: </span><br><span class="line">        <span class="keyword">return</span> cls.__bishi   <span class="comment"># 返回原来的对象</span></span><br><span class="line">s = Students()</span><br><span class="line">s1 = Students()</span><br><span class="line">print(s <span class="keyword">is</span> s1)   <span class="comment"># True  is判断是否为同一个对象</span></span><br><span class="line">print(id(s))</span><br><span class="line">print(id(s1))</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</article>
+
+
+                </div>
+                <aside class="col-md-4 gal-left" id="sidebar">
+    <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
+<aside id="sidebar-search">
+    <div class="search hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <form class="form-inline clearfix" id="search-form" method="get"
+              action="/search/index.html">
+            <input type="text" name="s" class="form-control" id="searchInput" placeholder="搜索文章~" autocomplete="off">
+            <button class="btn btn-danger btn-gal" type="submit">
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+    </div>
+</aside>
+    <aside id="sidebar-author">
+    <div class="panel panel-gal" data-aos="flip-right" data-aos-duration="3000">
+        <div class="panel-heading" style="text-align: center">
+            <i class="fa fa-quote-left"></i>
+            listem
+            <i class="fa fa-quote-right"></i>
+        </div>
+        <div class="author-panel text-center">
+            <img src="/imgs/avatar.jpg" width="140" height="140"
+                 alt="个人头像" class="author-image">
+            <p class="author-description"></p>
+        </div>
+    </div>
+</aside>
+    
+    <aside id="sidebar-recent_comments">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-comments"></i>
+            最新评论
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush"></ul>
+    </div>
+</aside>
+    
+    <!-- 要配置好leancloud才能开启此小工具 -->
+    
+    
+    <aside id="sidebar-recent_posts">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-refresh"></i>
+            近期文章
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush">
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/03/20/%E9%AD%94%E6%B3%95%E6%96%B9%E6%B3%95/">魔法方法</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/02/24/HTML/">HTML</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/02/23/%E8%A5%BF%E8%A5%BF%E5%BC%97%E7%A5%9E%E8%AF%9D/">西西弗神话</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/02/21/python%E5%9F%BA%E7%A1%80/">python基础</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/02/08/hello-world/">Hello World</a>
+                </span>
+            </li>
+            
+        </ul>
+    </div>
+</aside>
+    
+    
+    <aside id="sidebar-rand_posts">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-refresh"></i>
+            随机文章
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush">
+            
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/02/08/hello-world/">Hello World</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/02/21/python%E5%9F%BA%E7%A1%80/">python基础</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/02/23/%E8%A5%BF%E8%A5%BF%E5%BC%97%E7%A5%9E%E8%AF%9D/">西西弗神话</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/02/24/HTML/">HTML</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/03/20/%E9%AD%94%E6%B3%95%E6%96%B9%E6%B3%95/">魔法方法</a>
+                </span>
+            </li>
+            
+        </ul>
+    </div>
+</aside>
+    
+    
+    <aside id="gal-sets">
+        <div class="panel panel-gal hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+            <ul class="nav nav-pills pills-gal">
+
+                
+                <li>
+                    <a href="/2020/03/20/%E9%AD%94%E6%B3%95%E6%96%B9%E6%B3%95/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                </li>
+                
+                
+                <li>
+                    <a href="/2020/03/20/%E9%AD%94%E6%B3%95%E6%96%B9%E6%B3%95/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                </li>
+                
+                
+                <li>
+                    <a href="/2020/03/20/%E9%AD%94%E6%B3%95%E6%96%B9%E6%B3%95/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                </li>
+                
+            </ul>
+            <div class="tab-content">
+                
+                <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
+    
+</div>
+                
+                
+                <div class="friend-links tab-pane nav bs-sidenav fade" id="sidebar-friend-links">
+    
+    <li>
+        <a href="http://kdays.net/days/" target="_blank">KDays Forum</a>
+    </li>
+    
+    <li>
+        <a href="http://www.gal123.com/" target="_blank">绅士导航♂</a>
+    </li>
+    
+    <li>
+        <a href="http://www.moe123.com/" target="_blank">萌导航</a>
+    </li>
+    
+</div>
+                
+                
+                <div class="links tab-pane nav bs-sidenav fade" id="sidebar-links">
+    
+    <li>
+        <a href="https://github.com/18639710721?tab=repositories" target="_blank">Github</a>
+    </li>
+    
+    <li>
+        <a href="" target="_blank">Coding</a>
+    </li>
+    
+    <li>
+        <a href="https://www.zhihu.com/people/song-xiang-hao-17" target="_blank">知乎</a>
+    </li>
+    
+</div>
+                
+            </div>
+        </div>
+    </aside>
+    
+</aside>
+            </div>
+        </div>
+    </div>
+    <footer id="gal-footer">
+    <div class="container">
+        Copyright © 2018 listem Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>.&nbsp;Theme by <a href="https://github.com/ZEROKISEKI" target="_blank">AONOSORA</a>
+    </div>
+</footer>
+
+<!-- 回到顶端 -->
+<div id="gal-gotop">
+    <i class="fa fa-angle-up"></i>
+</div>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+
+<script src="/js/activate-power-mode.js"></script>
+
+<script>
+
+    // 配置highslide
+	hs.graphicsDir = '/js/highslide/graphics/'
+    hs.outlineType = "rounded-white";
+    hs.dimmingOpacity = 0.8;
+    hs.outlineWhileAnimating = true;
+    hs.showCredits = false;
+    hs.captionEval = "this.thumb.alt";
+    hs.numberPosition = "caption";
+    hs.align = "center";
+    hs.transitions = ["expand", "crossfade"];
+    hs.lang.number = '共%2张图, 当前是第%1张';
+    hs.addSlideshow({
+      interval: 5000,
+      repeat: true,
+      useControls: true,
+      fixedControls: "fit",
+      overlayOptions: {
+        opacity: 0.75,
+        position: "bottom center",
+        hideOnMouseOut: true
+      }
+    })
+
+    // 初始化aos
+    AOS.init({
+      duration: 1000,
+      delay: 0,
+      easing: 'ease-out-back'
+    });
+
+</script>
+<script>
+	POWERMODE.colorful = 'true';    // make power mode colorful
+	POWERMODE.shake = 'true';       // turn off shake
+	// TODO 这里根据具体情况修改
+	document.body.addEventListener('input', POWERMODE);
+</script>
+<script>
+    window.slideConfig = {
+      prefix: '/imgs/slide/background',
+      ext: 'jpg',
+      maxCount: '6'
+    }
+</script>
+
+<script src="/js/hs.js"></script>
+<script src="/js/blog.js"></script>
+
+
+
+<script src="/js/oni.js"></script>
+
+
+
+
+</html>
