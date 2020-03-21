@@ -10,7 +10,7 @@
     
     
     
-    <title>archive_a | Hexo</title>
+    <title>异常处理 | Hexo</title>
     <link href="https://github.com/18639710721/18639710721.github.io" rel="prefetch" />
 
     
@@ -126,7 +126,7 @@
                 
                 
                 
-                <li class="current">
+                <li class="">
                     <a href="/archives">
                         <i class="fa fa-archive"></i>归档
                     </a>
@@ -169,19 +169,27 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 gal-right" id="mainstay">
-                    <article class="article well article-body" id="article-archive">
+                    
+<article class="article well article-body" id="article">
     <div class="breadcrumb">
         <i class="fa fa-home"></i>
         <a href="https://github.com/18639710721/18639710721.github.io">Hexo</a>
         >
-        <span>归档</span>
+        <span>异常处理</span>
     </div>
     <!-- 大型设备详细文章 -->
     <div class="hidden-xs">
         <div class="title-article">
             <h1>
-                <a href="/archives">归档</a>
+                <a href="/2020/03/21/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/">异常处理</a>
             </h1>
+        </div>
+        <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-calendar"></i> 2020-03-21
+            </span>
+            
         </div>
     </div>
     <!-- 小型设备详细文章 -->
@@ -189,47 +197,54 @@
         <center>
             <div class="title-article">
                 <h4>
-                    <a href="/archives">归档</a>
+                    <a href="/2020/03/21/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/">异常处理</a>
                 </h4>
             </div>
+            <p>
+                <i class="fa fa-calendar"></i> 2020-03-21
+            </p>
+            <p>
+                
+                
+            </p>
         </center>
     </div>
-    <div class="content-article" style="margin-top: 30px;">
-        
-        
-            <h1 style="font-size: 24px; margin-top: 40px;">2020年</h1>
-            
-        <div class="alert alert-info" style="font-size: 14px; line-height: 2; font-weight: bold;">
-            
-             
-             
-                        <a href="/2020/03/21/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/">异常处理</a>
-                        <br>
-            
-             
-                        <a href="/2020/03/20/%E9%AD%94%E6%B3%95%E6%96%B9%E6%B3%95/">魔法方法</a>
-                        <br>
-            
-             
-                        <a href="/2020/02/24/HTML/">HTML</a>
-                        <br>
-            
-             
-                        <a href="/2020/02/23/%E8%A5%BF%E8%A5%BF%E5%BC%97%E7%A5%9E%E8%AF%9D/">西西弗神话</a>
-                        <br>
-            
-             
-                        <a href="/2020/02/21/python%E5%9F%BA%E7%A1%80/">python基础</a>
-                        <br>
-            
-             
-                        <a href="/2020/02/08/hello-world/">Hello World</a>
-                        <br>
-            
-                    </div>
-        
+    <div class="content-article">
+        <h3 id="异常"><a href="#异常" class="headerlink" title="异常"></a>异常</h3><ul>
+<li>异常是什么？<br>Python用异常对象(exception object)来表示异常情况。<br>遇到错误后，会引发异常。如果异常对象并未被处理或捕捉，程序就会用所谓的回溯(traceback， 一种错误信息)<strong>终止执行</strong>。<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">ipt = input(<span class="string">"请输入："</span>)</span><br><span class="line">num = int(ipt)</span><br><span class="line">print(num)   <span class="comment"># valueError</span></span><br><span class="line">fl = float(ipt)</span><br><span class="line">print(fl)</span><br><span class="line"></span><br><span class="line">prin(<span class="string">""</span>)  <span class="comment">#NameError: name 'prin' is not defined  代码执行停止</span></span><br><span class="line">a = <span class="number">2</span></span><br><span class="line">print(a)</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="捕获异常"><a href="#捕获异常" class="headerlink" title="捕获异常"></a>捕获异常</h3><ul>
+<li><p>查看异常类型<br>ipython交互环境下输入help(<strong>builtin</strong>)查看error</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">In [<span class="number">1</span>]: help(__builtin__)</span><br><span class="line">Help on built-<span class="keyword">in</span> module builtins:</span><br></pre></td></tr></table></figure></li>
+<li><p>try-except-else-finally</p>
+</li>
+<li><p>在日常维护中，需要把错误记录分类好写入日志，方便以后维护<br>try:<br>正常程序时，执行的代码块<br>except:<br>抛出异常时，捕捉异常，且自动执行该代码块<br>else:<br>没有出错,则执行else<br>finally:<br>不管出不出错,肯定执行</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span>:    </span><br><span class="line">    ipt = input(<span class="string">"请输入"</span>)   </span><br><span class="line">    num = int(ipt)    </span><br><span class="line">    print(num)</span><br><span class="line"><span class="keyword">except</span> Exception <span class="keyword">as</span> e:  <span class="comment"># Exception匹配了所有异常，把异常名称赋给了e </span></span><br><span class="line"><span class="comment"># 一旦有异常，执行except代码块    </span></span><br><span class="line">    print(e)    </span><br><span class="line">    num = <span class="number">1</span>    </span><br><span class="line">    print(num)</span><br><span class="line">    </span><br><span class="line"><span class="keyword">try</span>:  <span class="comment"># 正常执行时输出try里面代码 </span></span><br><span class="line">    <span class="comment"># li = [1,2]   </span></span><br><span class="line">    <span class="comment"># li[2]   # IndexError: list index out of range    </span></span><br><span class="line">    a = <span class="number">2</span>    </span><br><span class="line">    b = <span class="number">0</span>    </span><br><span class="line">    c = a/b    </span><br><span class="line">    print(c)  <span class="comment"># ZeroDivisionError: division by zero</span></span><br><span class="line"><span class="keyword">except</span> IndexError <span class="keyword">as</span> e:   </span><br><span class="line">    <span class="comment"># 要分类记录好    </span></span><br><span class="line">    print(e)</span><br><span class="line"><span class="keyword">except</span> ZeroDivisionError <span class="keyword">as</span> e:</span><br><span class="line">    print(e)</span><br><span class="line"><span class="keyword">except</span> Exception <span class="keyword">as</span> e:    <span class="comment"># exception 父类    </span></span><br><span class="line">    print(e)</span><br><span class="line"><span class="keyword">else</span>:   </span><br><span class="line">    print(<span class="string">"如何没有错误，执行else里面的代码"</span>)</span><br><span class="line"><span class="keyword">finally</span>:  <span class="comment"># 文件读写操作会用到    </span></span><br><span class="line">    <span class="comment"># f.close()   </span></span><br><span class="line">    print(<span class="string">"不管有没有异常，都执行"</span>)</span><br></pre></td></tr></table></figure>
+<h3 id="触发异常-raise"><a href="#触发异常-raise" class="headerlink" title="触发异常 raise"></a>触发异常 raise</h3></li>
+<li><p>raise Exception</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 判断一下熟没有熟的状态</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test</span><span class="params">(time)</span>:</span>    </span><br><span class="line">    <span class="keyword">if</span> time &lt; <span class="number">5</span>:</span><br><span class="line">    <span class="keyword">raise</span> Exception(<span class="string">"还没有熟"</span>)</span><br><span class="line">    </span><br><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    test(<span class="number">4</span>)</span><br><span class="line"><span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">    print(e)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    print(<span class="string">"顾客请吃"</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 模拟数据库</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">db</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="comment"># 模拟数据库</span></span><br><span class="line">    <span class="keyword">raise</span> Exception(<span class="string">"数据库错误"</span>)</span><br><span class="line">    </span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">demo</span><span class="params">()</span>:</span>  </span><br><span class="line">    <span class="keyword">try</span>:  </span><br><span class="line">    db() </span><br><span class="line">    <span class="keyword">except</span> Exception <span class="keyword">as</span> e:   </span><br><span class="line">    print(e, <span class="string">"错误1"</span>)  <span class="comment"># 记录数据库主动抛出的异常错误   </span></span><br><span class="line">    <span class="keyword">try</span>:        </span><br><span class="line">    li = [<span class="number">1</span>, <span class="number">2</span>]       </span><br><span class="line">    print(li[<span class="number">3</span>])    </span><br><span class="line">    <span class="keyword">except</span> Exception <span class="keyword">as</span> e:   </span><br><span class="line">    print(e, <span class="string">"错误2"</span>)   <span class="comment"># 这里记录demo代码块的错误demo()</span></span><br></pre></td></tr></table></figure>
+<h3 id="自定义异常"><a href="#自定义异常" class="headerlink" title="自定义异常"></a>自定义异常</h3></li>
+<li><p>创建一个新的异常类，根据自己的需求拟定异常规则，继承Exception类</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Mistake</span><span class="params">(Exception)</span>:</span> <span class="comment"># 继承父类Exception    </span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self,msg)</span>:</span>       </span><br><span class="line">        self.msg_error = msg    </span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__str__</span><span class="params">(self)</span>:</span>   <span class="comment"># 实例化时的返回信息        </span></span><br><span class="line">        <span class="keyword">return</span> self.msg_error</span><br><span class="line"></span><br><span class="line"><span class="keyword">try</span>: </span><br><span class="line">    <span class="keyword">raise</span> Mistake(<span class="string">"电脑错了"</span>)   <span class="comment"># 相当于实例化类</span></span><br><span class="line"><span class="keyword">except</span> Exception <span class="keyword">as</span> e:    </span><br><span class="line">    print(e)</span><br></pre></td></tr></table></figure>
+<h3 id="断言assert"><a href="#断言assert" class="headerlink" title="断言assert"></a>断言assert</h3></li>
+<li><p>形式：assert condition, your message</p>
+</li>
+<li><p>condition为True时，程序继续运行，下一个语句会被执行</p>
+</li>
+<li><p>condition为False时将会抛出AssertionError异常，该异常的信息为your message</p>
+</li>
+<li><p>assert常常用来调试和测试</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># print("----1----")</span></span><br><span class="line"><span class="comment"># assert 1 == 2</span></span><br><span class="line"><span class="comment"># print("----2----")</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+
     </div>
 </article>
+
+
                 </div>
                 <aside class="col-md-4 gal-left" id="sidebar">
     <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
@@ -383,17 +398,17 @@
 
                 
                 <li>
-                    <a href="/archives/2020/02/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                    <a href="/2020/03/21/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/archives/2020/02/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                    <a href="/2020/03/21/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/archives/2020/02/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                    <a href="/2020/03/21/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
                 </li>
                 
             </ul>
