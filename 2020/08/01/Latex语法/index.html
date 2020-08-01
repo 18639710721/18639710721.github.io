@@ -10,7 +10,7 @@
     
     
     
-    <title>蒙特卡洛算法求PI | Hexo</title>
+    <title>Latex语法 | Hexo</title>
     <link href="https://github.com/18639710721/18639710721.github.io" rel="prefetch" />
 
     
@@ -175,13 +175,13 @@
         <i class="fa fa-home"></i>
         <a href="https://github.com/18639710721/18639710721.github.io">Hexo</a>
         >
-        <span>蒙特卡洛算法求PI</span>
+        <span>Latex语法</span>
     </div>
     <!-- 大型设备详细文章 -->
     <div class="hidden-xs">
         <div class="title-article">
             <h1>
-                <a href="/2020/08/01/%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E7%AE%97%E6%B3%95%E6%B1%82PI/">蒙特卡洛算法求PI</a>
+                <a href="/2020/08/01/Latex%E8%AF%AD%E6%B3%95/">Latex语法</a>
             </h1>
         </div>
         <div class="tag-article">
@@ -197,7 +197,7 @@
         <center>
             <div class="title-article">
                 <h4>
-                    <a href="/2020/08/01/%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E7%AE%97%E6%B3%95%E6%B1%82PI/">蒙特卡洛算法求PI</a>
+                    <a href="/2020/08/01/Latex%E8%AF%AD%E6%B3%95/">Latex语法</a>
                 </h4>
             </div>
             <p>
@@ -210,12 +210,15 @@
         </center>
     </div>
     <div class="content-article">
-        <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="string">random</span></span><br><span class="line"><span class="string">     梅森旋转算法生成伪随机数</span></span><br><span class="line"><span class="string">     随机种子 --&gt; 梅森旋转算法 --&gt; 伪随机数(游戏中的暴击概率，氪金玩家的抽卡)</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">一个程序的80的时间都用在10的循环代码上 可以用perf_counter进行优化</span></span><br><span class="line"><span class="string">计算PI</span></span><br><span class="line"><span class="string">    random</span></span><br><span class="line"><span class="string">    time.perf_counter</span></span><br><span class="line"><span class="string">    darts   正方形内随机撒点总量  飞镖</span></span><br><span class="line"><span class="string">    hits 采样数   圆面积内的采样数  初始值为0.0</span></span><br><span class="line"><span class="string">    start</span></span><br><span class="line"><span class="string">            遍历循环</span></span><br><span class="line"><span class="string">            随机撒点 x y</span></span><br><span class="line"><span class="string">            dist 距离  此处指圆的半径</span></span><br><span class="line"><span class="string">            计算半径并考虑是否在园内 园内就计数循环</span></span><br><span class="line"><span class="string">            求出园内点和抛点总数的比，*4</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="keyword">from</span> random <span class="keyword">import</span> random</span><br><span class="line"><span class="keyword">from</span> time <span class="keyword">import</span> perf_counter</span><br><span class="line"></span><br><span class="line">darts = <span class="number">1000</span> * <span class="number">1000</span>  <span class="comment"># 撒点总数为100万</span></span><br><span class="line">hits = <span class="number">0.0</span></span><br><span class="line">start = perf_counter()</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, darts + <span class="number">1</span>):</span><br><span class="line">    x, y = random(), random()</span><br><span class="line">    dist = pow(x ** <span class="number">2</span> + y ** <span class="number">2</span>, <span class="number">0.5</span>)   <span class="comment"># 用pow开方  判断半径长度</span></span><br><span class="line">    <span class="keyword">if</span> dist &lt;= <span class="number">1.0</span>:</span><br><span class="line">        hits += <span class="number">1</span></span><br><span class="line">PI = <span class="number">4</span> * (hits/darts)</span><br><span class="line">print(<span class="string">f"圆周率PI为<span class="subst">&#123;PI&#125;</span>"</span>)</span><br><span class="line">print(<span class="string">f"该程序的运行时间为<span class="subst">&#123;perf_counter()-start&#125;</span>"</span>)</span><br></pre></td></tr></table></figure>
-<ul>
-<li><p>圆的标准公式 dist半径的计算如下<br><img src="https://upload-images.jianshu.io/upload_images/16129079-9eabf74a899ccb7e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="圆的标准公式"></p>
+        <ul>
+<li>下标和指数<br>$a_n $<br>$e^x$<br>$x^{10}$</li>
+<li>分数<br>$\frac23$</li>
+<li>积分符号<br>$\sum$ 求和<br>$\prod$ 求积<br>$\int$    积分<br>$\iint$   双重积分<br>$\iiint$  三重积分<br>$\oint$  回路积分<br>$\sum_{n=1}^\infty\frac1{n^2}$</li>
+<li>希腊字母<br>$\alpha$<br>$\Gamma$<br>$\phi$<br>$\varphi$<ul>
+<li>正体和斜体<br>$\mathrm dx$ 正体非斜体<br>$\mathbb R$ 空心字体</li>
+</ul>
 </li>
-<li><p>参考阅读<br><a href="https://zhuanlan.zhihu.com/p/95676341" target="_blank" rel="noopener">游戏中的伪随机</a><br><a href="https://www.zhihu.com/question/20254139/answer/33572009" target="_blank" rel="noopener">知乎问题 蒙特卡洛算法是什么</a></p>
-</li>
+<li>排版语句<br>$\begin{bmatrix} 1 &amp; 2 \ 3 &amp; 4$<br>$\begin{cases}y=x(x\le1)$<br>$$\begin{document}hello,world!\end{document}$$<br>本文参考<br><a href="https://www.zhihu.com/question/406132675/answer/1330879621" target="_blank" rel="noopener">latex语法教学</a><br><a href="https://www.luogu.com.cn/blog/IowaBattleship/latex-gong-shi-tai-quan" target="_blank" rel="noopener">洛谷LaTex语法</a><br><a href="https://www.zhihu.com/search?type=content&q=latex" target="_blank" rel="noopener">如何入门latex</a><br><a href="https://liam.page/2014/09/08/latex-introduction/" target="_blank" rel="noopener">文档教学</a></li>
 </ul>
 
     </div>
@@ -354,6 +357,12 @@
             
             <li class="list-group-item">
                 <span class="post-title">
+                    <a href="/2020/02/08/hello-world/">Hello World</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
                     <a href="/2020/02/21/python%E5%9F%BA%E7%A1%80/">python基础</a>
                 </span>
             </li>
@@ -361,12 +370,6 @@
             <li class="list-group-item">
                 <span class="post-title">
                     <a href="/2020/03/21/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/">异常处理</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2020/03/25/vscode%E4%BD%BF%E7%94%A8%E5%8F%8AVue%E7%AE%80%E5%8D%95%E6%93%8D%E4%BD%9C/">vscode使用及Vue简单操作</a>
                 </span>
             </li>
             
@@ -384,19 +387,13 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2020/03/20/%E9%AD%94%E6%B3%95%E6%96%B9%E6%B3%95/">魔法方法</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
                     <a href="/2020/07/31/%E5%90%8D%E8%AF%8D/">名词</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2020/07/31/nginx%E5%AE%9E%E7%8E%B0%E6%8E%A8%E6%8B%89%E6%B5%81/">nginx实现推拉流</a>
+                    <a href="/2020/08/01/Chapter%201/">Chapter 1</a>
                 </span>
             </li>
             
@@ -412,6 +409,12 @@
                 </span>
             </li>
             
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/08/01/Latex%E8%AF%AD%E6%B3%95/">Latex语法</a>
+                </span>
+            </li>
+            
         </ul>
     </div>
 </aside>
@@ -423,17 +426,17 @@
 
                 
                 <li>
-                    <a href="/2020/08/01/%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E7%AE%97%E6%B3%95%E6%B1%82PI/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                    <a href="/2020/08/01/Latex%E8%AF%AD%E6%B3%95/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/2020/08/01/%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E7%AE%97%E6%B3%95%E6%B1%82PI/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                    <a href="/2020/08/01/Latex%E8%AF%AD%E6%B3%95/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/2020/08/01/%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E7%AE%97%E6%B3%95%E6%B1%82PI/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                    <a href="/2020/08/01/Latex%E8%AF%AD%E6%B3%95/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
                 </li>
                 
             </ul>
