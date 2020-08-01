@@ -10,7 +10,7 @@
     
     
     
-    <title>nginx实现推拉流 | Hexo</title>
+    <title>archive_a | Hexo</title>
     <link href="https://github.com/18639710721/18639710721.github.io" rel="prefetch" />
 
     
@@ -126,7 +126,7 @@
                 
                 
                 
-                <li class="">
+                <li class="current">
                     <a href="/archives">
                         <i class="fa fa-archive"></i>归档
                     </a>
@@ -169,27 +169,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 gal-right" id="mainstay">
-                    
-<article class="article well article-body" id="article">
+                    <article class="article well article-body" id="article-archive">
     <div class="breadcrumb">
         <i class="fa fa-home"></i>
         <a href="https://github.com/18639710721/18639710721.github.io">Hexo</a>
         >
-        <span>nginx实现推拉流</span>
+        <span>归档</span>
     </div>
     <!-- 大型设备详细文章 -->
     <div class="hidden-xs">
         <div class="title-article">
             <h1>
-                <a href="/2020/07/31/nginx%E5%AE%9E%E7%8E%B0%E6%8E%A8%E6%8B%89%E6%B5%81/">nginx实现推拉流</a>
+                <a href="/archives">归档</a>
             </h1>
-        </div>
-        <div class="tag-article">
-            
-            <span class="label label-gal">
-                <i class="fa fa-calendar"></i> 2020-07-31
-            </span>
-            
         </div>
     </div>
     <!-- 小型设备详细文章 -->
@@ -197,73 +189,63 @@
         <center>
             <div class="title-article">
                 <h4>
-                    <a href="/2020/07/31/nginx%E5%AE%9E%E7%8E%B0%E6%8E%A8%E6%8B%89%E6%B5%81/">nginx实现推拉流</a>
+                    <a href="/archives">归档</a>
                 </h4>
             </div>
-            <p>
-                <i class="fa fa-calendar"></i> 2020-07-31
-            </p>
-            <p>
-                
-                
-            </p>
         </center>
     </div>
-    <div class="content-article">
-        <ul>
-<li><p>点击阿里巴巴的官方镜像网站找到centos的的iso镜像下载地址</p>
-<ul>
-<li><a href="https://developer.aliyun.com/mirror/" target="_blank" rel="noopener">阿里巴巴镜像网站</a></li>
-<li><a href="https://mirrors.aliyun.com/centos/6/isos/x86_64/" target="_blank" rel="noopener">Centos的官网下载镜像iso地址</a></li>
-<li><a href="https://blog.csdn.net/babyxue/article/details/80970526" target="_blank" rel="noopener">CentOS搭建方法</a></li>
-<li><a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html" target="_blank" rel="noopener">putty工具</a> </li>
-<li><a href="https://winscp.net/download/WinSCP-5.17.6-Setup.exe" target="_blank" rel="noopener">winSCP下载</a></li>
-</ul>
-</li>
-<li><p>在虚拟机的终端输入<code>ip addr</code>找到<code>ens33的inet</code>就是虚拟机的<code>ip地址</code>,<br>打开putty工具输入ip地址输入<code>账户</code>和<code>密码</code>(注意，此处密码是隐藏的)<br><img src="https://upload-images.jianshu.io/upload_images/16129079-2f68c5e19b7b6b5b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="putty输入账号密码"></p>
-</li>
-<li><p>查看防火墙 并关闭</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">systemctl status firewalld 查看防火墙的状态 active</span><br><span class="line">systemctl disable firewalld 禁用防火墙 </span><br><span class="line">此处可能要输入密码</span><br><span class="line">systemctl status firewalld 此时查看状态已经停用 inactive 这时已经被关闭</span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/16129079-363615abb2fd633e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="关闭防火墙"></p>
-</li>
-<li><p>遇到了<code>you need to be root to perform this command</code>问题。此处需要提升<code>root权限</code> 输入<code>su</code>回车输入密码即可。<br><img src="https://upload-images.jianshu.io/upload_images/16129079-44fb568990574e83.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="su"></p>
-</li>
-<li><p><code>yum -y install wget</code>  安装wget</p>
-</li>
-<li><p><code>yum -y install gcc gcc-c++</code>   安装c++ 看到complete即成功  此处因为安装PCRE库时发现了一条报错 如下图<br><img src="https://upload-images.jianshu.io/upload_images/16129079-28b60d794887ccf6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="未安装c++的报错"></p>
-</li>
-<li><p>安装PCRE库</p>
-<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /usr/local/     # 切换目录</span><br><span class="line">wget http://jaist.dl.sourceforge.<span class="built_in">net</span>/project/pcre/pcre/<span class="number">8</span>.<span class="number">33</span>/pcre-<span class="number">8</span>.<span class="number">33</span>.tar.gz    # 下载</span><br><span class="line">tar -zxvf pcre-<span class="number">8</span>.<span class="number">33</span>.tar.gz</span><br><span class="line"><span class="built_in">cd</span> pcre-<span class="number">8</span>.<span class="number">33</span></span><br><span class="line">./configure</span><br><span class="line">make &amp;&amp; make install   # 别问我，我也不懂，照着写 小心翼翼就行</span><br></pre></td></tr></table></figure></li>
-<li><p><img src="https://upload-images.jianshu.io/upload_images/16129079-d5c7cd03499085e3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="make执行成功"></p>
-</li>
-<li><p>安装openssl 下面错误需要给用户<code>提权</code><br><img src="https://upload-images.jianshu.io/upload_images/16129079-a0ec0ea3c5425223.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="未知"></p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local/ </span><br><span class="line">wget http://www.openssl.org/source/openssl<span class="number">-1.0</span><span class="number">.1j</span>.tar.gz </span><br><span class="line">tar -zxvf openssl<span class="number">-1.0</span><span class="number">.1j</span>.tar.gz </span><br><span class="line">cd openssl<span class="number">-1.0</span><span class="number">.1j</span></span><br><span class="line">./config</span><br><span class="line">make &amp;&amp; make install</span><br></pre></td></tr></table></figure></li>
-<li><p>安装zlib</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local/</span><br><span class="line">wget http://zlib.net/zlib<span class="number">-1.2</span><span class="number">.11</span>.tar.gz</span><br><span class="line">tar -zxvf zlib<span class="number">-1.2</span><span class="number">.11</span>.tar.gz</span><br><span class="line">cd zilb<span class="number">-1.2</span><span class="number">.11</span></span><br><span class="line">./configure</span><br><span class="line">make &amp;&amp; make install</span><br></pre></td></tr></table></figure></li>
-<li><p>下载<code>git</code>并通过git下载<code>nginx</code></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd &#x2F;usr&#x2F;local&#x2F;</span><br><span class="line">yum -y install git</span><br><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;arut&#x2F;nginx-rtmp-module.git</span><br></pre></td></tr></table></figure>
-<p><img src="https://upload-images.jianshu.io/upload_images/16129079-d687fbd2c0fe7852.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="安装nginx"></p>
-</li>
-<li><p>安装nginx</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local/</span><br><span class="line">wget http://nginx.org/download/nginx<span class="number">-1.8</span><span class="number">.0</span>.tar.gz</span><br><span class="line">tar -zxvf nginx<span class="number">-1.8</span><span class="number">.0</span>.tar.gz</span><br><span class="line">cd nginx<span class="number">-1.8</span><span class="number">.0</span></span><br><span class="line">./configure  -- --prefix=/usr/local/src/nginx --<span class="keyword">with</span>-http_stub_status_module --<span class="keyword">with</span>-http_gzip_static_module --<span class="keyword">with</span>-http_realip_module --<span class="keyword">with</span>-http_sub_module --<span class="keyword">with</span>-http_ssl_module  --add-module=../nginx-rtmp-module  --<span class="keyword">with</span>-openssl=&lt;path这里填你的openssl的地址 也就是pwd&gt; --<span class="keyword">with</span>-http_ssl_module</span><br><span class="line">make &amp;&amp; make install</span><br></pre></td></tr></table></figure></li>
-<li><p><code>nginx相关命令</code></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;usr&#x2F;local&#x2F;src&#x2F;nginx&#x2F;sbin&#x2F;nginx   -v 找到目录并启动</span><br><span class="line">&#x2F;usr&#x2F;local&#x2F;src&#x2F;nginx&#x2F;sbin&#x2F;nginx –s reload  重启</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>最后的补充</p>
-<ul>
-<li>启动nginx后没有pid报错输入<code>/usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf</code></li>
-<li>常用liunx指令<pre><code>ls
-pwd 路径
-cd</code></pre></li>
-</ul>
-</li>
-</ul>
-<p>参考文档<br><a href="https://hywlovexyc.info/blog/archives/572/" target="_blank" rel="noopener">搭建基于nginx的rtmp直播服务器</a><br><a href="https://www.runoob.com/w3cnote/nginx-setup-intro.html" target="_blank" rel="noopener">nginx配置详解</a></p>
-
+    <div class="content-article" style="margin-top: 30px;">
+        
+        
+            <h1 style="font-size: 24px; margin-top: 40px;">2020年</h1>
+            
+        <div class="alert alert-info" style="font-size: 14px; line-height: 2; font-weight: bold;">
+            
+             
+             
+                        <a href="/2020/08/01/%E5%B0%8F%E7%8E%8B%E5%AD%90/">小王子</a>
+                        <br>
+            
+             
+                        <a href="/2020/07/31/nginx%E5%AE%9E%E7%8E%B0%E6%8E%A8%E6%8B%89%E6%B5%81/">nginx实现推拉流</a>
+                        <br>
+            
+             
+                        <a href="/2020/07/31/%E5%90%8D%E8%AF%8D/">名词</a>
+                        <br>
+            
+             
+                        <a href="/2020/07/31/%E8%B1%A1%E4%B8%8E%E9%AA%91%E8%B1%A1%E4%BA%BA/">象与骑象人</a>
+                        <br>
+            
+             
+                        <a href="/2020/03/25/vscode%E4%BD%BF%E7%94%A8%E5%8F%8AVue%E7%AE%80%E5%8D%95%E6%93%8D%E4%BD%9C/">vscode使用及Vue简单操作</a>
+                        <br>
+            
+             
+                        <a href="/2020/03/21/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/">异常处理</a>
+                        <br>
+            
+             
+                        <a href="/2020/03/20/%E9%AD%94%E6%B3%95%E6%96%B9%E6%B3%95/">魔法方法</a>
+                        <br>
+            
+             
+                        <a href="/2020/02/23/%E8%A5%BF%E8%A5%BF%E5%BC%97%E7%A5%9E%E8%AF%9D/">西西弗神话</a>
+                        <br>
+            
+             
+                        <a href="/2020/02/21/python%E5%9F%BA%E7%A1%80/">python基础</a>
+                        <br>
+            
+             
+                        <a href="/2020/02/08/hello-world/">Hello World</a>
+                        <br>
+            
+                    </div>
+        
     </div>
 </article>
-
-
                 </div>
                 <aside class="col-md-4 gal-left" id="sidebar">
     <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
@@ -465,17 +447,17 @@ cd</code></pre></li>
 
                 
                 <li>
-                    <a href="/2020/07/31/nginx%E5%AE%9E%E7%8E%B0%E6%8E%A8%E6%8B%89%E6%B5%81/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                    <a href="/archives/2020/08/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/2020/07/31/nginx%E5%AE%9E%E7%8E%B0%E6%8E%A8%E6%8B%89%E6%B5%81/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                    <a href="/archives/2020/08/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/2020/07/31/nginx%E5%AE%9E%E7%8E%B0%E6%8E%A8%E6%8B%89%E6%B5%81/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                    <a href="/archives/2020/08/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
                 </li>
                 
             </ul>
