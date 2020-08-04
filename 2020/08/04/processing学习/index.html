@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="listem">
+    
+    
+    
+    
+    
+    
+    <title>processing学习 | Hexo</title>
+    <link href="https://github.com/18639710721/18639710721.github.io" rel="prefetch" />
+
+    
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/aos.css">
+<link rel="stylesheet" href="/css/style.css">
+
+    
+<script src="/js/jquery.min.js"></script>
+
+    
+<script src="/js/bootstrap.min.js"></script>
+
+    
+<script src="/js/aos.js"></script>
+
+    
+<script src="/js/highslide/highslide-full.min.js"></script>
+
+    
+<link rel="stylesheet" href="/js/highslide/highslide.css">
+
+    <style type="text/css">
+        @media (max-width: 768px) {
+            body {
+                background-color: #f0f0f0;
+                background: url('/imgs/xsbg.gif');
+                background-attachment: fixed;
+            }
+        }
+    </style>
+    
+    <!--<script type="text/javascript">
+      if (document.images) {
+        var avatar = new Image();
+        avatar.src = '/imgs/avatar.jpg'
+        var previews = 'preview1.jpg,preview2.jpg,preview3.jpg,preview4.jpg'.split(',')
+        var previewsPreLoad = []
+        for(var i = 0; i < length; i++) {
+          previewsPreLoad.push(new Image())
+          previewsPreLoad[previewsPreLoad.length - 1].src = '/imgs/preview' + previews[i]
+        }
+      }
+    </script>-->
+<meta name="generator" content="Hexo 4.2.0"></head>
+<body>
+    <!-- 背景轮播图功能 -->
+    <section class="hidden-xs">
+    <ul class="cb-slideshow">
+        <li><span>天若</span></li>
+        <li><span>有情</span></li>
+        <li><span>天亦老</span></li>
+        <li><span>我为</span></li>
+        <li><span>长者</span></li>
+        <li><span>续一秒</span></li>
+    </ul>
+</section>
+    <!-- 欧尼酱功能, 谁用谁知道 -->
+    
+    <div class="gal-menu gal-dropdown">
+    <div class="circle" id="gal">
+        <div class="ring">
+            <a href="https://github.com/18639710721/18639710721.github.io" class="menuItem" style="left: 50%; top: 15%;">首页</a>
+            
+            <a class="menuItem" style="left: 80.3109%; top: 32.5%;">下一页</a>
+            
+            <a href="/archives" class="menuItem" style="left: 80.3109%; top: 67.5%;">归档</a>
+            <a href="/about" class="menuItem" style="left: 50%; top: 85%;">关于</a>
+            <a href="/message" class="menuItem" style="left: 19.6891%; top: 67.5%;">留言板</a>
+
+            
+            <a class="menuItem" style="left: 19.6891%; top: 32.5%;">上一页</a>
+            
+        </div>
+        <audio id="audio" src="/imgs/oni.mp3"></audio>
+    </div>
+</div>
+    
+    <header class="navbar navbar-inverse" id="gal-header">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed"
+                    data-toggle="collapse" data-target=".bs-navbar-collapse"
+                    aria-expanded="false">
+                <span class="fa fa-lg fa-reorder"></span>
+            </button>
+            <a href="https://github.com/18639710721/18639710721.github.io">
+                
+                <style>
+                    #gal-header .navbar-brand {
+                        height: 54px;
+                        line-height: 24px;
+                        font-size: 28px;
+                        opacity: 1;
+                        background-color: rgba(0,0,0,0);
+                        text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #228DFF,0 0 35px #228DFF,0 0 40px #228DFF,0 0 50px #228DFF,0 0 75px #228DFF;
+                    }
+                </style>
+                <!-- 这里使用文字(navbar_text or config.title) -->
+                <div class="navbar-brand">Hexo</div>
+                
+            </a>
+        </div>
+        <div class="collapse navbar-collapse bs-navbar-collapse">
+            <ul class="nav navbar-nav" id="menu-gal">
+                
+                
+                <li class="">
+                    <a href="/">
+                        <i class="fa fa-home"></i>首页
+                    </a>
+                </li>
+                
+                
+                
+                <li class="">
+                    <a href="/archives">
+                        <i class="fa fa-archive"></i>归档
+                    </a>
+                </li>
+                
+                
+                
+                
+                <li class="">
+                    <a href="/categories">
+                        <i class="fa fa-list"></i>分类
+                    </a>
+                </li>
+                
+                
+                
+                
+                
+                <li class="">
+                    <a href="/tags">
+                        <i class="fa fa-tags"></i>标签
+                    </a>
+                </li>
+                
+                
+                
+                
+                <li class="">
+                    <a href="/about">
+                        <i class="fa fa-user"></i>关于我
+                    </a>
+                </li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</header>
+    <div id="gal-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 gal-right" id="mainstay">
+                    
+<article class="article well article-body" id="article">
+    <div class="breadcrumb">
+        <i class="fa fa-home"></i>
+        <a href="https://github.com/18639710721/18639710721.github.io">Hexo</a>
+        >
+        <span>processing学习</span>
+    </div>
+    <!-- 大型设备详细文章 -->
+    <div class="hidden-xs">
+        <div class="title-article">
+            <h1>
+                <a href="/2020/08/04/processing%E5%AD%A6%E4%B9%A0/">processing学习</a>
+            </h1>
+        </div>
+        <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-calendar"></i> 2020-08-04
+            </span>
+            
+        </div>
+    </div>
+    <!-- 小型设备详细文章 -->
+    <div class="visible-xs">
+        <center>
+            <div class="title-article">
+                <h4>
+                    <a href="/2020/08/04/processing%E5%AD%A6%E4%B9%A0/">processing学习</a>
+                </h4>
+            </div>
+            <p>
+                <i class="fa fa-calendar"></i> 2020-08-04
+            </p>
+            <p>
+                
+                
+            </p>
+        </center>
+    </div>
+    <div class="content-article">
+        <h2 id="第一周"><a href="#第一周" class="headerlink" title="第一周"></a>第一周</h2><h3 id="Processing背景设定"><a href="#Processing背景设定" class="headerlink" title="Processing背景设定"></a>Processing背景设定</h3><ul>
+<li>setup()函数表示绘制窗体<ul>
+<li>size设置宽高</li>
+</ul>
+</li>
+<li>draw()函数是绘画的主体内容<ul>
+<li>background设置rgb色彩 </li>
+<li>可以通过工具的颜色选择器选择RGB色彩值</li>
+<li>(255,255,255) white<br>(0,0,0) black<br><img src="https://upload-images.jianshu.io/upload_images/16129079-bc1581909dbd85ce.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="rgb"></li>
+</ul>
+</li>
+</ul>
+<figure class="highlight processing"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">void</span> <span class="title">setup</span>()</span><br><span class="line">&#123;</span><br><span class="line">  <span class="built_in">size</span>(<span class="number">400</span>,<span class="number">400</span>); <span class="comment">// display width height</span></span><br><span class="line">  </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">void</span> <span class="title">draw</span>()</span><br><span class="line">&#123;</span><br><span class="line">  <span class="built_in">background</span>(<span class="number">255</span>,<span class="number">0</span>,<span class="number">0</span>);  <span class="comment">// rgb color</span></span><br><span class="line">  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="绘制矩形和椭圆"><a href="#绘制矩形和椭圆" class="headerlink" title="绘制矩形和椭圆"></a>绘制矩形和椭圆</h3><ul>
+<li>图形<ul>
+<li>rect(x,y,width,height) 矩形</li>
+<li>ellipase(300,200,50,100)  width&amp;height is same 为 circle  ！为椭圆 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">setup</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  size(<span class="number">400</span>,<span class="number">400</span>); <span class="comment">// display width height</span></span><br><span class="line">  </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">draw</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  background(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>);  <span class="comment">// rgb color</span></span><br><span class="line">  </span><br><span class="line">  rect(<span class="number">100</span>,<span class="number">50</span>,<span class="number">100</span>,<span class="number">20</span>); <span class="comment">//长方形</span></span><br><span class="line">  </span><br><span class="line">  rect(<span class="number">200</span>,<span class="number">150</span>,<span class="number">10</span>,<span class="number">10</span>);  <span class="comment">// 正方形</span></span><br><span class="line">  </span><br><span class="line">  ellipse(<span class="number">300</span>,<span class="number">200</span>,<span class="number">50</span>,<span class="number">100</span>); <span class="comment">// 椭圆</span></span><br><span class="line">  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="颜色填充"><a href="#颜色填充" class="headerlink" title="颜色填充"></a>颜色填充</h3></li>
+</ul>
+</li>
+<li>使用fill()函数填充图像颜色<figure class="highlight processing"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">void</span> <span class="title">setup</span>()</span><br><span class="line">&#123;</span><br><span class="line">  <span class="built_in">size</span>(<span class="number">400</span>,<span class="number">400</span>); <span class="comment">// display width height</span></span><br><span class="line">  </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">void</span> <span class="title">draw</span>()</span><br><span class="line">&#123;</span><br><span class="line">  <span class="built_in">background</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>);  <span class="comment">// rgb color</span></span><br><span class="line">  </span><br><span class="line">  <span class="built_in">fill</span>(<span class="number">0</span>,<span class="number">255</span>,<span class="number">0</span>);</span><br><span class="line">  </span><br><span class="line">  <span class="built_in">rect</span>(<span class="number">100</span>,<span class="number">50</span>,<span class="number">100</span>,<span class="number">20</span>);</span><br><span class="line">  </span><br><span class="line">  <span class="built_in">rect</span>(<span class="number">200</span>,<span class="number">150</span>,<span class="number">10</span>,<span class="number">10</span>);</span><br><span class="line">  </span><br><span class="line">  <span class="built_in">fill</span>(<span class="number">255</span>,<span class="number">0</span>,<span class="number">0</span>);</span><br><span class="line">  </span><br><span class="line">  <span class="built_in">ellipse</span>(<span class="number">300</span>,<span class="number">200</span>,<span class="number">50</span>,<span class="number">100</span>);</span><br><span class="line">  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="描边"><a href="#描边" class="headerlink" title="描边"></a>描边</h3></li>
+<li>使用 stroke()函数描边<figure class="highlight processing"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">void</span> <span class="title">draw</span>()</span><br><span class="line">&#123;</span><br><span class="line">  <span class="built_in">background</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>);  <span class="comment">// rgb color</span></span><br><span class="line">  </span><br><span class="line">  <span class="built_in">stroke</span>(<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>);</span><br><span class="line">  <span class="built_in">fill</span>(<span class="number">0</span>,<span class="number">255</span>,<span class="number">0</span>);</span><br><span class="line">  </span><br><span class="line">  <span class="built_in">rect</span>(<span class="number">100</span>,<span class="number">50</span>,<span class="number">100</span>,<span class="number">20</span>);</span><br><span class="line">  </span><br><span class="line">  <span class="built_in">stroke</span>(<span class="number">255</span>,<span class="number">0</span>,<span class="number">255</span>); <span class="comment">//下面的都变成了紫色</span></span><br><span class="line">  <span class="built_in">rect</span>(<span class="number">200</span>,<span class="number">150</span>,<span class="number">10</span>,<span class="number">10</span>);</span><br><span class="line">  </span><br><span class="line">  <span class="built_in">fill</span>(<span class="number">255</span>,<span class="number">0</span>,<span class="number">0</span>);</span><br><span class="line">  </span><br><span class="line">  <span class="built_in">ellipse</span>(<span class="number">300</span>,<span class="number">200</span>,<span class="number">50</span>,<span class="number">100</span>);</span><br><span class="line">  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="图像的绘制顺序"><a href="#图像的绘制顺序" class="headerlink" title="图像的绘制顺序"></a>图像的绘制顺序</h3></li>
+<li>noStroke()去掉图片默认边框，代码由上至下执行<figure class="highlight processing"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">void</span> <span class="title">setup</span>()</span><br><span class="line">&#123;</span><br><span class="line">  <span class="built_in">size</span>( <span class="number">400</span>, <span class="number">400</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">void</span> <span class="title">draw</span>()</span><br><span class="line">&#123;</span><br><span class="line">  <span class="built_in">background</span>(<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>);</span><br><span class="line">  </span><br><span class="line">  <span class="built_in">noStroke</span>();</span><br><span class="line">  </span><br><span class="line">  <span class="built_in">fill</span>(<span class="number">0</span>,<span class="number">255</span>,<span class="number">0</span>);</span><br><span class="line">  <span class="built_in">rect</span>( <span class="number">100</span>, <span class="number">100</span>, <span class="number">200</span>, <span class="number">200</span>);</span><br><span class="line">  </span><br><span class="line">  <span class="built_in">fill</span>(<span class="number">255</span>,<span class="number">0</span>,<span class="number">0</span>);</span><br><span class="line">  <span class="built_in">rect</span>(<span class="number">120</span>,<span class="number">120</span>,<span class="number">200</span>,<span class="number">200</span>);</span><br><span class="line">  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="使用beginShape-绘制自定义图形"><a href="#使用beginShape-绘制自定义图形" class="headerlink" title="使用beginShape()绘制自定义图形"></a>使用beginShape()绘制自定义图形</h3></li>
+<li>不规则多边形</li>
+<li>beginShape();<br>vertex(x,y) 中间绘制顶点坐标(至少三个)<br>endShape(); <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">setup</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  size(<span class="number">400</span>,<span class="number">400</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">draw</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  background(<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>);</span><br><span class="line">  </span><br><span class="line">  fill(<span class="number">0</span>,<span class="number">0</span>,<span class="number">255</span>);</span><br><span class="line">  noStroke();</span><br><span class="line">  </span><br><span class="line">  beginShape();</span><br><span class="line">  vertex(<span class="number">100</span>,<span class="number">100</span>);</span><br><span class="line">  vertex(<span class="number">150</span>,<span class="number">150</span>);</span><br><span class="line">  vertex(<span class="number">150</span>,<span class="number">175</span>);</span><br><span class="line">  vertex(<span class="number">200</span>,<span class="number">220</span>);</span><br><span class="line">  vertex(<span class="number">200</span>,<span class="number">250</span>);</span><br><span class="line">  endShape();</span><br></pre></td></tr></table></figure></li>
+<li>rect&amp;Shape绘制的正方形<figure class="highlight processing"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">void</span> <span class="title">setup</span>()</span><br><span class="line">&#123;</span><br><span class="line">  <span class="built_in">size</span>(<span class="number">400</span>,<span class="number">400</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">void</span> <span class="title">draw</span>()</span><br><span class="line">&#123;</span><br><span class="line">  <span class="built_in">background</span>(<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>);</span><br><span class="line">  <span class="built_in">fill</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">255</span>);</span><br><span class="line">  <span class="built_in">noStroke</span>();</span><br><span class="line">  </span><br><span class="line">  <span class="built_in">beginShape</span>();</span><br><span class="line">  <span class="built_in">vertex</span>(<span class="number">100</span>,<span class="number">100</span>);</span><br><span class="line">  <span class="built_in">vertex</span>(<span class="number">100</span>,<span class="number">150</span>);</span><br><span class="line">  <span class="built_in">vertex</span>(<span class="number">150</span>,<span class="number">150</span>);</span><br><span class="line">  <span class="built_in">vertex</span>(<span class="number">150</span>,<span class="number">100</span>);</span><br><span class="line">  <span class="built_in">endShape</span>();</span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  <span class="built_in">rect</span>(<span class="number">200</span>,<span class="number">100</span>,<span class="number">50</span>,<span class="number">50</span>);</span><br><span class="line">  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="制作雪人"><a href="#制作雪人" class="headerlink" title="制作雪人"></a>制作雪人</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">void setup()</span><br><span class="line">&#123;</span><br><span class="line">  size(600,600);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void draw()</span><br><span class="line">&#123;</span><br><span class="line">  background(125,125,125);</span><br><span class="line">  </span><br><span class="line">  fill(255,255,255);</span><br><span class="line">  </span><br><span class="line">  ellipse(300,250,200,200);</span><br><span class="line">  </span><br><span class="line">  ellipse(200,450,300,300);</span><br><span class="line">  </span><br><span class="line">  fill(0,0,0);</span><br><span class="line">  ellipse(340,215,10,10);</span><br><span class="line">  ellipse(300,215,10,10);</span><br><span class="line">  </span><br><span class="line">  fill(255,180,0);</span><br><span class="line">  beginShape();</span><br><span class="line">  vertex(320,250);</span><br><span class="line">  vertex(450,270);</span><br><span class="line">  vertex(320,280);</span><br><span class="line">  endShape();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+
+    </div>
+</article>
+
+
+                </div>
+                <aside class="col-md-4 gal-left" id="sidebar">
+    <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
+<aside id="sidebar-search">
+    <div class="search hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <form class="form-inline clearfix" id="search-form" method="get"
+              action="/search/index.html">
+            <input type="text" name="s" class="form-control" id="searchInput" placeholder="搜索文章~" autocomplete="off">
+            <button class="btn btn-danger btn-gal" type="submit">
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+    </div>
+</aside>
+    <aside id="sidebar-author">
+    <div class="panel panel-gal" data-aos="flip-right" data-aos-duration="3000">
+        <div class="panel-heading" style="text-align: center">
+            <i class="fa fa-quote-left"></i>
+            listem
+            <i class="fa fa-quote-right"></i>
+        </div>
+        <div class="author-panel text-center">
+            <img src="/imgs/avatar.jpg" width="140" height="140"
+                 alt="个人头像" class="author-image">
+            <p class="author-description"></p>
+        </div>
+    </div>
+</aside>
+    
+    <aside id="sidebar-recent_comments">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-comments"></i>
+            最新评论
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush"></ul>
+    </div>
+</aside>
+    
+    <!-- 要配置好leancloud才能开启此小工具 -->
+    
+    
+    <aside id="sidebar-recent_posts">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-refresh"></i>
+            近期文章
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush">
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/08/04/processing%E5%AD%A6%E4%B9%A0/">processing学习</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/08/04/%E5%BD%A2%E5%AE%B9%E8%AF%8D%E5%92%8C%E5%89%AF%E8%AF%8D/">形容词和副词</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/08/03/%E4%BB%A3%E8%AF%8D/">代词</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/08/01/%E5%86%A0%E8%AF%8D/">冠词</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/08/01/Javascript%E7%AE%80%E4%BB%8B/">Javascript简介</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/08/01/Latex%E8%AF%AD%E6%B3%95/">Latex语法</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/08/01/%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E7%AE%97%E6%B3%95%E6%B1%82PI/">蒙特卡洛算法求PI</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/08/01/%E5%A6%82%E4%BD%95%E4%B8%8B%E8%BD%BDb%E7%AB%99%E8%A7%86%E9%A2%91/">如何下载b站视频</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/08/01/Chapter%201/">Chapter 1</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/07/31/nginx%E5%AE%9E%E7%8E%B0%E6%8E%A8%E6%8B%89%E6%B5%81/">nginx实现推拉流</a>
+                </span>
+            </li>
+            
+        </ul>
+    </div>
+</aside>
+    
+    
+    <aside id="sidebar-rand_posts">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-refresh"></i>
+            随机文章
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush">
+            
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/03/21/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/">异常处理</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/02/23/%E8%A5%BF%E8%A5%BF%E5%BC%97%E7%A5%9E%E8%AF%9D/">西西弗神话</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/03/20/%E9%AD%94%E6%B3%95%E6%96%B9%E6%B3%95/">魔法方法</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/07/31/%E5%90%8D%E8%AF%8D/">名词</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/07/31/nginx%E5%AE%9E%E7%8E%B0%E6%8E%A8%E6%8B%89%E6%B5%81/">nginx实现推拉流</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/08/01/Chapter%201/">Chapter 1</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/08/01/%E5%A6%82%E4%BD%95%E4%B8%8B%E8%BD%BDb%E7%AB%99%E8%A7%86%E9%A2%91/">如何下载b站视频</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/08/01/Latex%E8%AF%AD%E6%B3%95/">Latex语法</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/08/04/%E5%BD%A2%E5%AE%B9%E8%AF%8D%E5%92%8C%E5%89%AF%E8%AF%8D/">形容词和副词</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/08/04/processing%E5%AD%A6%E4%B9%A0/">processing学习</a>
+                </span>
+            </li>
+            
+        </ul>
+    </div>
+</aside>
+    
+    
+    <aside id="gal-sets">
+        <div class="panel panel-gal hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+            <ul class="nav nav-pills pills-gal">
+
+                
+                <li>
+                    <a href="/2020/08/04/processing%E5%AD%A6%E4%B9%A0/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                </li>
+                
+                
+                <li>
+                    <a href="/2020/08/04/processing%E5%AD%A6%E4%B9%A0/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                </li>
+                
+                
+                <li>
+                    <a href="/2020/08/04/processing%E5%AD%A6%E4%B9%A0/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                </li>
+                
+            </ul>
+            <div class="tab-content">
+                
+                <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
+    
+</div>
+                
+                
+                <div class="friend-links tab-pane nav bs-sidenav fade" id="sidebar-friend-links">
+    
+    <li>
+        <a href="http://kdays.net/days/" target="_blank">KDays Forum</a>
+    </li>
+    
+    <li>
+        <a href="http://www.gal123.com/" target="_blank">绅士导航♂</a>
+    </li>
+    
+    <li>
+        <a href="http://www.moe123.com/" target="_blank">萌导航</a>
+    </li>
+    
+</div>
+                
+                
+                <div class="links tab-pane nav bs-sidenav fade" id="sidebar-links">
+    
+    <li>
+        <a href="https://github.com/18639710721?tab=repositories" target="_blank">Github</a>
+    </li>
+    
+    <li>
+        <a href="" target="_blank">Coding</a>
+    </li>
+    
+    <li>
+        <a href="https://www.zhihu.com/people/song-xiang-hao-17" target="_blank">知乎</a>
+    </li>
+    
+</div>
+                
+            </div>
+        </div>
+    </aside>
+    
+</aside>
+            </div>
+        </div>
+    </div>
+    <footer id="gal-footer">
+    <div class="container">
+        Copyright © 2018 listem Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>.&nbsp;Theme by <a href="https://github.com/ZEROKISEKI" target="_blank">AONOSORA</a>
+    </div>
+</footer>
+
+<!-- 回到顶端 -->
+<div id="gal-gotop">
+    <i class="fa fa-angle-up"></i>
+</div>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+
+<script src="/js/activate-power-mode.js"></script>
+
+<script>
+
+    // 配置highslide
+	hs.graphicsDir = '/js/highslide/graphics/'
+    hs.outlineType = "rounded-white";
+    hs.dimmingOpacity = 0.8;
+    hs.outlineWhileAnimating = true;
+    hs.showCredits = false;
+    hs.captionEval = "this.thumb.alt";
+    hs.numberPosition = "caption";
+    hs.align = "center";
+    hs.transitions = ["expand", "crossfade"];
+    hs.lang.number = '共%2张图, 当前是第%1张';
+    hs.addSlideshow({
+      interval: 5000,
+      repeat: true,
+      useControls: true,
+      fixedControls: "fit",
+      overlayOptions: {
+        opacity: 0.75,
+        position: "bottom center",
+        hideOnMouseOut: true
+      }
+    })
+
+    // 初始化aos
+    AOS.init({
+      duration: 1000,
+      delay: 0,
+      easing: 'ease-out-back'
+    });
+
+</script>
+<script>
+	POWERMODE.colorful = 'true';    // make power mode colorful
+	POWERMODE.shake = 'true';       // turn off shake
+	// TODO 这里根据具体情况修改
+	document.body.addEventListener('input', POWERMODE);
+</script>
+<script>
+    window.slideConfig = {
+      prefix: '/imgs/slide/background',
+      ext: 'jpg',
+      maxCount: '6'
+    }
+</script>
+
+<script src="/js/hs.js"></script>
+<script src="/js/blog.js"></script>
+
+
+
+<script src="/js/oni.js"></script>
+
+
+
+
+</html>
