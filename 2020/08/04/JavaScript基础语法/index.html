@@ -10,7 +10,7 @@
     
     
     
-    <title>象与骑象人 | Hexo</title>
+    <title>JavaScript基础语法 | Hexo</title>
     <link href="https://github.com/18639710721/18639710721.github.io" rel="prefetch" />
 
     
@@ -175,19 +175,19 @@
         <i class="fa fa-home"></i>
         <a href="https://github.com/18639710721/18639710721.github.io">Hexo</a>
         >
-        <span>象与骑象人</span>
+        <span>JavaScript基础语法</span>
     </div>
     <!-- 大型设备详细文章 -->
     <div class="hidden-xs">
         <div class="title-article">
             <h1>
-                <a href="/2020/07/31/%E8%B1%A1%E4%B8%8E%E9%AA%91%E8%B1%A1%E4%BA%BA/">象与骑象人</a>
+                <a href="/2020/08/04/JavaScript%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/">JavaScript基础语法</a>
             </h1>
         </div>
         <div class="tag-article">
             
             <span class="label label-gal">
-                <i class="fa fa-calendar"></i> 2020-07-31
+                <i class="fa fa-calendar"></i> 2020-08-04
             </span>
             
         </div>
@@ -197,11 +197,11 @@
         <center>
             <div class="title-article">
                 <h4>
-                    <a href="/2020/07/31/%E8%B1%A1%E4%B8%8E%E9%AA%91%E8%B1%A1%E4%BA%BA/">象与骑象人</a>
+                    <a href="/2020/08/04/JavaScript%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/">JavaScript基础语法</a>
                 </h4>
             </div>
             <p>
-                <i class="fa fa-calendar"></i> 2020-07-31
+                <i class="fa fa-calendar"></i> 2020-08-04
             </p>
             <p>
                 
@@ -210,38 +210,34 @@
         </center>
     </div>
     <div class="content-article">
-        <h3 id="第一部分-人的心理是如何运作的？-人象对峙"><a href="#第一部分-人的心理是如何运作的？-人象对峙" class="headerlink" title="第一部分 人的心理是如何运作的？(人象对峙)"></a>第一部分 人的心理是如何运作的？(人象对峙)</h3><h4 id="分裂的自我，使你产生心理冲突"><a href="#分裂的自我，使你产生心理冲突" class="headerlink" title="分裂的自我，使你产生心理冲突"></a>分裂的自我，使你产生心理冲突</h4><h5 id="有关内心的古老比喻"><a href="#有关内心的古老比喻" class="headerlink" title="有关内心的古老比喻"></a>有关内心的古老比喻</h5><ul>
-<li>人类通过<code>比喻</code>,<code>类比</code>（新事物和已知事物的关联）来进行思考人生(很难从空泛的角度)</li>
-<li>佛陀野生大象之喻(心理)<ul>
-<li>柏拉图的心灵马车(<code>soul</code>)  <code>理性</code>来驾驭(驯服) 将自我导向正途的<code>好情绪(荣誉感)</code>和类似<code>欲望和贪恋的坏情绪</code><br>弗洛伊德的人格模型  <code>自我</code>(ego 有意识理性的自我), <code>超我</code>(superego 道德良心 服从于社会规范),<code>本我</code>(id 类似享乐的原生欲望)     <code>精神分析的目的就是通过强化自我，让自我能更好的控制自我，并摆脱超我的束缚</code></li>
+        <h3 id="基础语法"><a href="#基础语法" class="headerlink" title="基础语法"></a>基础语法</h3><h3 id="输出-output"><a href="#输出-output" class="headerlink" title="输出(output)"></a>输出(output)</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="string">"Hello World"</span>);   <span class="comment">// 控制台输出</span></span><br><span class="line">alert(<span class="string">"Hello World"</span>);          <span class="comment">// 调用windows对象网页弹出对话框</span></span><br><span class="line"><span class="built_in">document</span>.write(<span class="string">"Hello World"</span>) <span class="comment">// 网页上输出</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/16129079-1102872261551c7b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="output"><br><img src="https://upload-images.jianshu.io/upload_images/16129079-084d8b040db59d1a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Windows窗口对象输出"></p>
+<h4 id="声明变量-declare-a-variable"><a href="#声明变量-declare-a-variable" class="headerlink" title="声明变量(declare a variable)"></a>声明变量(declare a variable)</h4><ul>
+<li>变量名不能用数字开头或者使用关键字,可以采取<a href="https://zh.wikipedia.org/wiki/%E9%A7%9D%E5%B3%B0%E5%BC%8F%E5%A4%A7%E5%B0%8F%E5%AF%AB" target="_blank" rel="noopener">驼峰命名法</a></li>
+<li>三种变量声明(three kinds of variable declarations)<ul>
+<li>var </li>
+<li>let</li>
+<li>const 声明一个常量<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//2 let const 变量名字区分大小写  驼峰命名法 fontColor font_color</span></span><br><span class="line"><span class="keyword">let</span> name  <span class="comment">// 只初始化未赋值的话会显示一个undefined(未定义的) 推荐使用let</span></span><br><span class="line"><span class="keyword">var</span> first_name = <span class="string">"相好"</span> <span class="comment">// var 声明的变量未赋值是空白</span></span><br><span class="line"><span class="built_in">console</span>.log(name);</span><br><span class="line"><span class="built_in">console</span>.log(first_name);</span><br><span class="line"><span class="keyword">let</span> a = <span class="number">5</span>;</span><br><span class="line"><span class="keyword">let</span> b = <span class="number">6</span>;</span><br><span class="line"><span class="keyword">let</span> c = a + b</span><br><span class="line"><span class="built_in">console</span>.log(c + <span class="number">5</span>);</span><br><span class="line"><span class="comment">//3 const 常量</span></span><br><span class="line"><span class="keyword">const</span> PI = <span class="number">3.14</span>  <span class="comment">// 无法改变否则会报错</span></span><br></pre></td></tr></table></figure>
+<h4 id="Data-types-数据类型"><a href="#Data-types-数据类型" class="headerlink" title="Data types(数据类型)"></a>Data types(数据类型)</h4></li>
 </ul>
 </li>
-</ul>
-<p>计算机及认知心理学，现代人研究思考和决策机制<br>eg:</p>
-<ul>
-<li>社会心理学的<code>认知加工理论</code>  解释从<code>偏见到友谊</code>的种种人类生活状态</li>
-<li>经济学的<code>理性人假设</code>  人是<code>理性的个体</code> 会利用手表掌握的<code>信息及资源</code>，恰当的设立<code>目标</code>，达成目标(想想自己过去的行为种种 啪啪啪打脸)</li>
-</ul>
-<p>现代的认知加工理论和理性人假设无法解释人类意志力的软弱，明明自知却做出对自己不利的行为？通过象与骑象人的比喻先了解<code>人类的心理世界-分裂的自我</code></p>
-<h5 id="四种自我分裂"><a href="#四种自我分裂" class="headerlink" title="四种自我分裂"></a>四种自我分裂</h5><ul>
-<li>心灵和身体<br>蒙田: 身体各个部位的情绪主张(阴茎的独立性)<br><code>自主神经系统</code>掌控我们身体的器官和腺体<br>肠脑的特殊性   肠道受到感染会引发脑部产生焦虑，，让你在生病时的行为更加谨慎  <code>乙酰胆碱 血清素</code><br>关于本节的一些思考<br>  <code>催眠时躯体感觉的具象化</code><br>  精神疾病患者的躯体症状 比如<code>木僵</code> , 个人感觉<code>运动 饮食  还有冥想</code>对健康非常有帮助<br><a href="https://www.ted.com/talks/amy_cuddy_your_body_language_may_shape_who_you_are" target="_blank" rel="noopener">Your body language may shape who you are の TED 演讲</a> 里面有一段话：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">   that our bodies change our minds and our minds can change our behavior, and our behavior can change our outcomes</span><br></pre></td></tr></table></figure></li>
-<li>左脑和右脑<br>裂脑人实验的胼胝体切除造成的奇怪现象: <code>虚构症(confabulation)</code> <code>异手综合征(alien hand syndrome)</code> 感觉有点像幻肢？感觉左脑和右脑的区别可以参考<code>改变心理学的四十项研究</code>里的裂脑人实验。<br><a href="https://www.zhihu.com/question/35647499" target="_blank" rel="noopener">脑功能偏侧化？ 视觉？ 有点意思</a></li>
-<li>理性和感性<ul>
-<li>大脑的进化<br>脊椎动物 后脑 前脑 和中脑 三大团神经元<br>早期哺乳动物的前脑新外壳 <code>边缘系统(limbic system)</code>包括<code>下丘脑</code>( 协调冲动和动机) <code>海马体</code>(专司记忆) <code>杏仁核</code>(情绪学习及反应)<br>高级哺乳动物(尤其<code>灵长类</code>) 额叶皮层(frontal cortex) <code>思考计划和决策</code>  eg:钢筋贯穿及前额叶摘除手术的联想<br><code>眼窝前额叶皮层</code>对于人类情绪反应的重要性 : 面对美景或者可怕景象没有正常身体反应，分析推理及逻辑思考未受影响，智力测验和社会规则和道德规范测试也正常 行为：居然连简单的决定和目标都无法做出<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">人类的理性其实是非常依赖复杂的情感，因为只有充满情绪的大脑运行顺畅时，理性才得以运转</span><br></pre></td></tr></table></figure>
-<ul>
-<li>控制化和自动化</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>自动化处理过程均属<code>无意识的状态</code>, 似乎有流动的<code>意识流</code> eg：<code>呼吸 眨眼 移动座位 做白日梦</code></li>
-<li>控制化处理过程需要一定的步骤，这种思考相当费神  eg: 去搭乘飞机的思考。<ul>
-<li>无意识               按照一定的步骤     </li>
-<li>单线程               多线程</li>
-<li>启动多巴胺的按钮(生存 欢愉 和痛苦)                      需要语言(行为主义的操作性条件反射，摆脱刺激性条件反射 巴普洛夫的狗)</li>
-<li>象(内心的感觉 本能反应 情绪和直觉)                          更像是一名顾问/骑象人(理性，应该只是激情的奴隶，除了服从之外，没有其他可能) 有意识 控制后的思考</li>
-</ul>
-</li>
+<li>Boolean(布尔值)  true &amp; false</li>
+<li>Number(数字)  int float(整数或者浮点数)</li>
+<li>String(字符串) for example: 单双引号包裹的或者`` 包裹的写法</li>
+<li>undefined 表示变量未定义的属性</li>
+<li>null 表示空值的关键字 null value special keyword</li>
+<li>BIgInt</li>
+<li>Symbol 符号</li>
+<li>Object 对象<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> visible = <span class="literal">true</span>;</span><br><span class="line"><span class="keyword">let</span> isEqual = <span class="literal">false</span>;</span><br><span class="line"><span class="built_in">console</span>.log(visible);</span><br><span class="line"><span class="built_in">console</span>.log(isEqual);</span><br><span class="line"><span class="keyword">let</span> num = <span class="number">100</span>;</span><br><span class="line"><span class="keyword">let</span> floatingNum = <span class="number">12.34</span>;</span><br><span class="line"><span class="keyword">let</span> negative = <span class="number">-100</span>;</span><br><span class="line"><span class="built_in">console</span>.log(num);</span><br><span class="line"><span class="built_in">console</span>.log(floatingNum);</span><br><span class="line"><span class="built_in">console</span>.log(negative);</span><br><span class="line"><span class="keyword">let</span> str = <span class="string">"hello"</span>;</span><br><span class="line"><span class="built_in">console</span>.log(str);</span><br><span class="line"><span class="keyword">let</span> notInitialized = <span class="literal">undefined</span>   <span class="comment">// 变量还未初始化或者被赋值  未定义的</span></span><br><span class="line"><span class="built_in">console</span>.log(notInitialized);    <span class="comment">// 字面量 暂时未理解？</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span>(notInitialized));</span><br></pre></td></tr></table></figure>
+<h4 id="Data-type-conversion-数据类型转换"><a href="#Data-type-conversion-数据类型转换" class="headerlink" title="Data type conversion(数据类型转换)"></a>Data type conversion(数据类型转换)</h4></li>
+<li>Javascript是动态类型语言，声明变量不用向Java这样的静态语言一样声明数据类型 dynamically typed language</li>
+<li>可以通过 typeof 查看变量的数据类型<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> visible);</span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> num);</span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> floatingNum);</span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> str);</span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> notInitialized);</span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> emptyValue);</span><br><span class="line"><span class="keyword">let</span> age = <span class="number">15</span>;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> age);</span><br><span class="line">age = <span class="string">"15"</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> age);   <span class="comment">// javascript 能在代码执行时动态判断数据类型</span></span><br></pre></td></tr></table></figure></li>
+<li>Number() 将数字字符串转换为纯数字 NaN 表示不是一个数字parseInt()&amp;parseFloat()<em>将首字母为数字的任意字符串</em>提取小数部分或者整数部分</li>
+<li>字符串和数字进行+拼接时自动转换为字符串<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> result = num + str;</span><br><span class="line"><span class="built_in">console</span>.log(result);    <span class="comment">// javascript 在字符串和数字拼接时会自动转换为字符串</span></span><br><span class="line"><span class="keyword">let</span> strNum = <span class="string">"123"</span>;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">parseInt</span>(strNum) + num);   <span class="comment">// 转换类型并数字相加</span></span><br></pre></td></tr></table></figure>
+<h4 id="comments-注释"><a href="#comments-注释" class="headerlink" title="comments(注释)"></a>comments(注释)</h4></li>
+<li>/ / 单行注释</li>
+<li>/* */ 多行注释</li>
+<li>/<em>* 文档注释(生成API文档)</em>/ 帮助工具<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">// 姓名</span></span><br><span class="line"><span class="keyword">let</span> myName = <span class="string">"listem"</span>;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">下面的代码是为了完成以下的操作:</span></span><br><span class="line"><span class="comment">    1. 获取表单的值</span></span><br><span class="line"><span class="comment">    2. 提交表单</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 对两个操作符进行加法运算</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;number&#125;</span> </span>a  第一个操作数</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;number&#125;</span> </span>b  第二个操作数</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@returns  </span>返回两个操作数的和</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">add</span>(<span class="params">a = <span class="number">1</span>, b = <span class="number">1</span></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> a + b;  </span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(add(<span class="number">5</span>,<span class="number">6</span>))</span><br></pre></td></tr></table></figure></li>
 </ul>
 
     </div>
@@ -380,31 +376,25 @@
             
             <li class="list-group-item">
                 <span class="post-title">
+                    <a href="/2020/02/21/python%E5%9F%BA%E7%A1%80/">python基础</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
                     <a href="/2020/03/21/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/">异常处理</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2020/03/25/vscode%E4%BD%BF%E7%94%A8%E5%8F%8AVue%E7%AE%80%E5%8D%95%E6%93%8D%E4%BD%9C/">vscode使用及Vue简单操作</a>
+                    <a href="/2020/07/31/%E8%B1%A1%E4%B8%8E%E9%AA%91%E8%B1%A1%E4%BA%BA/">象与骑象人</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2020/03/20/%E9%AD%94%E6%B3%95%E6%96%B9%E6%B3%95/">魔法方法</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2020/07/31/%E5%90%8D%E8%AF%8D/">名词</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2020/07/31/nginx%E5%AE%9E%E7%8E%B0%E6%8E%A8%E6%8B%89%E6%B5%81/">nginx实现推拉流</a>
+                    <a href="/2020/08/01/Chapter%201/">Chapter 1</a>
                 </span>
             </li>
             
@@ -422,6 +412,18 @@
             
             <li class="list-group-item">
                 <span class="post-title">
+                    <a href="/2020/08/01/Latex%E8%AF%AD%E6%B3%95/">Latex语法</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/08/01/%E5%86%A0%E8%AF%8D/">冠词</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
                     <a href="/2020/08/03/%E4%BB%A3%E8%AF%8D/">代词</a>
                 </span>
             </li>
@@ -429,12 +431,6 @@
             <li class="list-group-item">
                 <span class="post-title">
                     <a href="/2020/08/04/%E5%BD%A2%E5%AE%B9%E8%AF%8D%E5%92%8C%E5%89%AF%E8%AF%8D/">形容词和副词</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2020/08/04/JavaScript%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/">JavaScript基础语法</a>
                 </span>
             </li>
             
@@ -449,17 +445,17 @@
 
                 
                 <li>
-                    <a href="/2020/07/31/%E8%B1%A1%E4%B8%8E%E9%AA%91%E8%B1%A1%E4%BA%BA/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                    <a href="/2020/08/04/JavaScript%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/2020/07/31/%E8%B1%A1%E4%B8%8E%E9%AA%91%E8%B1%A1%E4%BA%BA/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                    <a href="/2020/08/04/JavaScript%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/2020/07/31/%E8%B1%A1%E4%B8%8E%E9%AA%91%E8%B1%A1%E4%BA%BA/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                    <a href="/2020/08/04/JavaScript%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
                 </li>
                 
             </ul>
