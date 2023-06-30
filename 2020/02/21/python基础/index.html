@@ -1,0 +1,211 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"/><meta name="theme-color" content="#222"/><meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1"/><meta name="renderer" content="webkit"/><link rel="icon" type="image/ico" sizes="32x32" href="/assets/favicon.ico"/><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"/><link rel="alternate" href="/rss.xml" title="Hexo" type="application/rss+xml"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml"><link rel="alternate" type="application/json" title="Hexo" href="http://example.com/feed.json"/><link rel="preconnect" href="https://lf9-cdn-tos.bytecdntp.com"/><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"/><link rel="dns-prefetch" href="https://unpkg.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext"><link rel="stylesheet" href="/css/app.css?v=0.2.10"><script src="https://cdn.staticfile.org/vue/3.2.45/vue.global.prod.js"></script><link rel="canonical" href="http://example.com/2020/02/21/python%E5%9F%BA%E7%A1%80/"><title>python基础</title><meta name="generator" content="Hexo 6.3.0"></head><body itemscope itemtype="http://schema.org/WebPage"><div id="loading"><div class="cat"><div class="body"></div><div class="head"><div class="face"></div></div><div class="foot"><div class="tummy-end"></div><div class="bottom"></div><div class="legs left"></div><div class="legs right"></div></div><div class="paw"><div class="hands left"></div><div class="hands right"></div></div></div></div><div id="container"><header id="header" itemscope itemtype="http://schema.org/WPHeader"><div class="inner"><div id="brand"><div class="pjax"><h1 itemprop="name headline">python基础</h1><div class="meta"><span class="item" title="Created: 2020-02-21 14:16:25"><span class="icon"><i class="ic i-calendar"></i></span><span class="text">Posted on</span><time itemprop="dateCreated datePublished" datetime="2020-02-21T14:16:25+08:00">2020-02-21</time></span><span class="item" title="Symbols count in article"><span class="icon"><i class="ic i-pen"></i></span><span class="text">Symbols count in article</span><span>3.7k</span><span class="text">words</span></span><span class="item" title="Reading time"><span class="icon"><i class="ic i-clock"></i></span><span class="text">Reading time</span><span>3 mins.</span></span></div></div></div><nav id="nav"><div class="inner"><div class="toggle"><div class="lines" aria-label="Toggle navigation bar"><span class="line"></span><span class="line"></span><span class="line"></span></div></div><ul class="menu"><li class="item title"><a href="/" rel="start">testName</a></li></ul><ul class="right" id="rightNav"><li class="item theme" @click="changeThemeByBtn"><i class="ic" :class="{'i-sun': !themeStatus,'i-moon': themeStatus}"></i></li><li class="item search"><i class="ic i-search"></i></li></ul></div></nav></div><div class="pjax" id="imgs"><ul><li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicitcxhpij20zk0m8hdt.jpg"></li><li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicit4jrvuj20zk0m8785.jpg"></li><li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicis081o9j20zk0m8dmr.jpg"></li><li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicis3attqj20zk0m8k7l.jpg"></li><li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicit31ffoj20zk0m8naf.jpg"></li><li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giciryrr3rj20zk0m8nhk.jpg"></li></ul></div></header><div id="waves"><svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path></defs><g class="parallax"><use xlink:href="#gentle-wave" x="48" y="0"></use><use xlink:href="#gentle-wave" x="48" y="3"></use><use xlink:href="#gentle-wave" x="48" y="5"></use><use xlink:href="#gentle-wave" x="48" y="7"></use></g></svg></div><main><div class="inner"><div class="pjax" id="main"><div class="article wrap"><div class="breadcrumb" itemListElement itemscope itemtype="https://schema.org/BreadcrumbList"><i class="ic i-home"></i><span><a href="/">Home</a></span></div><article class="post block" itemscope="itemscope" itemtype="http://schema.org/Article" lang="en"><link itemprop="mainEntityOfPage" href="http://example.com/2020/02/21/python%E5%9F%BA%E7%A1%80/"/><span hidden="hidden" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><meta itemprop="image" content="/assets/avatar.jpg"/><meta itemprop="name" content="listem"/><meta itemprop="description" content=", "/></span><span hidden="hidden" itemprop="publisher" itemscope="itemscope" itemtype="http://schema.org/Organization"><meta itemprop="name" content="Hexo"/></span><div class="body md" itemprop="articleBody"><h1 id="python核心编程"><a class="markdownIt-Anchor" href="#python核心编程">#</a> Python 核心编程</h1>
+<h3 id="python语言模块"><a class="markdownIt-Anchor" href="#python语言模块">#</a> python 语言模块</h3>
+<h4 id="语言特点"><a class="markdownIt-Anchor" href="#语言特点">#</a> 语言特点</h4>
+<ol>
+<li>简单易学、明确优雅、<strong>开发速度快</strong>（快速迭代和开发速度）</li>
+<li>跨平台 (树莓派，虚拟环境)、可移植、可扩展 (可以在 c 语言中嵌入 python 的代码)、交互式 (ipython)、解释型 (编译型)、面向对象 (everything is obcjects) 的动态语言 (没有强制声明变量类型，java 静态语言)</li>
+<li>“内置电池”，大量的标准库和第三方库</li>
+<li>社区活跃，贡献者多，互帮互助 (stack overflow 简书 csdn)</li>
+<li>开源语言，发展动力巨大 (遵循<span class="exturl" data-url="aHR0cHM6Ly96aC53aWtpcGVkaWEub3JnL3dpa2kvR05VJUU5JTgwJTlBJUU3JTk0JUE4JUU1JTg1JUFDJUU1JTg1JUIxJUU4JUFFJUI4JUU1JThGJUFGJUU4JUFGJTgx"> GPL 协议</span>)</li>
+</ol>
+<h4 id="应用方向"><a class="markdownIt-Anchor" href="#应用方向">#</a> 应用方向</h4>
+<p>1 常规软件开发<br>
+ 2. 科学计算<br>
+ 3. 自动化运维<br>
+ 4. 云计算<br>
+ 5. <strong>WEB 开发</strong><br>
+ 6. <strong>网络爬虫</strong><br>
+ 7. 数据分析<br>
+ 8. 人工智能</p>
+<ul>
+<li>python 之禅</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> this</span><br></pre></td></tr></table></figure>
+<h4 id="编译器和解释器"><a class="markdownIt-Anchor" href="#编译器和解释器">#</a> 编译器和解释器</h4>
+<ul>
+<li>高级语言和机器语言 (01010101) 之间的翻译官</li>
+<li>都是将代码翻译成机器可以执行的二进制机器码，只不过在运行原理和翻译过程中有不同而已</li>
+<li>区别<br>
+编译器：先整体编译再执行<br>
+解释器：边解释边执行<br>
+编译方式：运行速度快，但任何一个小改动都需要整体重新编译。可脱离编译环境运行。代表语言是 C 语言<br>
+解释方式：运行速度慢，但部分改动不需要整体重新编译。不可萝莉解释环境运行。代表语言是 Python 语言</li>
+<li>解释器种类<br>
+ CPython 官方解释器，最常用<br>
+ Ipython 交互式解释器<br>
+ PyPy：采用 JIT 技术 对 python 代码进行动态编译，可以显著提高 python 代码的执行速度</li>
+</ul>
+<h4 id="python环境搭建"><a class="markdownIt-Anchor" href="#python环境搭建">#</a> python 环境搭建</h4>
+<ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cucHl0aG9uLm9yZy8=">python 官网</span></li>
+<li>记得配置环境变量 path 和安装 pip 工具包</li>
+<li>多查看官方文档</li>
+</ul>
+<h4 id="pip命令操作"><a class="markdownIt-Anchor" href="#pip命令操作">#</a> pip 命令操作</h4>
+<ul>
+<li>pip 基础使用<br>
+普通安装<br>
+ pip install xlwt</li>
+</ul>
+<p>指定版本安装<br>
+ pip install pygame==1.9.6</p>
+<p>卸载已安装的库<br>
+ pip uninstall pygame</p>
+<p>列出已经安装的库<br>
+ pip list<br>
+pip freeze</p>
+<p>将已经安装的库列表保存到文本文件中，创建一个 requirements 文件批量安装库</p>
+<p>pip freeze &gt; D:\requirements.txt</p>
+<p>根据依赖文件批量安装库<br>
+ pip install -r D:\requirements.txt</p>
+<p>显示所安装包的信息<br>
+ pip show package<br>
+pip show -f package<br>
+ 升级指定的包</p>
+<p>pip install -U package</p>
+<ul>
+<li>whl 文件安装<br>
+<span class="exturl" data-url="aHR0cHM6Ly93d3cubGZkLnVjaS5lZHUvfmdvaGxrZS9weXRob25saWJzLyN0d2lzdGVk">网址</span></li>
+</ul>
+<p>pip install 文件路径 的方式离线进行安装</p>
+<ul>
+<li>换源安装</li>
+<li>国内镜像源地址<br>
+<span class="exturl" data-url="aHR0cDovL21pcnJvcnMuYWxpeXVuLmNvbS9weXBpL3NpbXBsZS8=">阿里云</span><br>
+<span class="exturl" data-url="aHR0cHM6Ly9weXBpLm1pcnJvcnMudXN0Yy5lZHUuY24vc2ltcGxlLw==">中国科技大学</span><br>
+<span class="exturl" data-url="aHR0cDovL3B5cGkuZG91YmFuLmNvbS9zaW1wbGUv">豆瓣</span><br>
+<span class="exturl" data-url="aHR0cHM6Ly9weXBpLnR1bmEudHNpbmdodWEuZWR1LmNuL3NpbXBsZS8=">清华大学</span><br>
+<span class="exturl" data-url="aHR0cDovL3B5cGkubWlycm9ycy51c3RjLmVkdS5jbi9zaW1wbGUv">中国科学技术大学</span></li>
+<li>修改源方法<br>
+临时修改：<br>
+可以在使用 pip 的时候在后面加上 - i 参数，指定 pip 源<br>
+ pip install xlrd -i <span class="exturl" data-url="aHR0cHM6Ly9weXBpLm1pcnJvcnMudXN0Yy5lZHUuY24vc2ltcGxlLw==">https://pypi.mirrors.ustc.edu.cn/simple/</span></li>
+</ul>
+<p>永久修改：<br>
+1. 点击此电脑，在最上面的的文件夹窗口输入 ： % APPDATA%<br>
+2. 按回车跳转到以下目录，新建 pip 文件夹<br>
+ 3. 创建 pip.ini 文件<br>
+ 4. 打开文件夹，输入以下内容，关闭即可（注意：源镜像可替换）<br>
+[global]<br>
+timeout = 6000<br>
+index-url = <span class="exturl" data-url="aHR0cHM6Ly9weXBpLnR1bmEudHNpbmdodWEuZWR1LmNuL3NpbXBsZQ==">https://pypi.tuna.tsinghua.edu.cn/simple</span> # 源所在地址<br>
+ trusted-host = <span class="exturl" data-url="aHR0cDovL3B5cGkudHVuYS50c2luZ2h1YS5lZHUuY24=">pypi.tuna.tsinghua.edu.cn</span>  # 源所在网站</p>
+<h4 id="pycharm基本使用"><a class="markdownIt-Anchor" href="#pycharm基本使用">#</a> pycharm 基本使用</h4>
+<ul>
+<li>配置解释器 settings --&gt;project --&gt; add --&gt; 目录添加</li>
+<li>Font Code style --&gt;python 风格 File and Code Templates File Encodings (编码格式)</li>
+</ul>
+<h3 id="python基础"><a class="markdownIt-Anchor" href="#python基础">#</a> python 基础</h3>
+<h4 id="基础语法"><a class="markdownIt-Anchor" href="#基础语法">#</a> 基础语法</h4>
+<h5 id="标识符"><a class="markdownIt-Anchor" href="#标识符">#</a> 标识符</h5>
+<p><strong>标识符</strong>就是对变量、常量、函数、类等对象起的名字</p>
+<ul>
+<li>命名规则</li>
+<li>以字符或者下划线开头 (首字母不可以是<strong>数字</strong>) 且大小写敏感</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">list</span>.append() <span class="comment"># .为调用方法</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>变量用小写 常量大写 (圆周率 PI) 使用英文</li>
+<li>变量命名的三种方法
+<ul>
+<li>函数和方法名用小驼峰或者小写加下划线</li>
+<li>类名用大驼峰 (OldKing)</li>
+<li><strong>变量的命名不要使用关键字和内置函数的名称</strong> (sum)</li>
+</ul>
+</li>
+</ul>
+<h5 id="关键字"><a class="markdownIt-Anchor" href="#关键字">#</a> 关键字</h5>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> keyword</span><br><span class="line">keyword.keyword <span class="comment"># 导出python关键字</span></span><br></pre></td></tr></table></figure>
+<h5 id="注释"><a class="markdownIt-Anchor" href="#注释">#</a> 注释</h5>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 创建一个derictory并在其中创建一个python file</span></span><br><span class="line"><span class="keyword">import</span> os  <span class="comment"># pycharm下 CTAL + 鼠标左键查看内置模块代码</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>单行注释 <strong>#</strong><br>
+快捷键 ctrl + / (选中注释)<br>
+ 快速复制 ctrl + d</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#  这是打印输出hello world</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;hello world&quot;</span>)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>文档注释</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">这是函数说明文档</span></span><br><span class="line"><span class="string">这是函数说明文档</span></span><br><span class="line"><span class="string">这是函数说明文档</span></span><br><span class="line"><span class="string">这是函数说明文档</span></span><br><span class="line"><span class="string">这是函数说明文档</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure>
+<h5 id="语句和代码块"><a class="markdownIt-Anchor" href="#语句和代码块">#</a> 语句和代码块</h5>
+<ul>
+<li><strong>语句</strong><br>
+在代码中，能够完整表达某个意思、操作或者逻辑的最短代码，被称为语句<br>
+ python 的标准语言不需要使用分号。简单的<strong>换行</strong>就表示语句已经结束。</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">&quot;hello world &quot;</span>)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>代码块
+<ul>
+<li>为完成某一特定功能而联系在一起的一组语句构成一个代码块。有判断、循环、函数、类等各种代码块。代码块的首行通常以<strong>关键字</strong>开始，以<strong>冒号 (:) 结束</strong></li>
+<li>缩进<br>
+ Python 最具特色的语法就是使用<strong>缩进</strong>来表示代码块，不需要使用大括号</li>
+<li>多行语句 \</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">demo</span>( ):</span><br><span class="line">    <span class="keyword">pass</span> <span class="comment"># 占位语句</span></span><br></pre></td></tr></table></figure>
+<h5 id="字符串"><a class="markdownIt-Anchor" href="#字符串">#</a> 字符串</h5>
+<ul>
+<li>英文输入下单双引号都一样</li>
+<li>用 r 或者 R 表示原生字符串也可以用 \ 转义</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">str</span> = <span class="string">r&quot;C:\now&quot;</span></span><br></pre></td></tr></table></figure>
+<h4 id="变量和常量"><a class="markdownIt-Anchor" href="#变量和常量">#</a> 变量和常量</h4>
+<ul>
+<li>值会发生变化和不会发生变化</li>
+<li>变量和常量本质上都是存储数据的容器</li>
+<li>变量还是常量，在创建时都会在内存中开辟一块空间，用于保存它的值，可以通过 id () 查询内存地址</li>
+<li>= 赋值</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a, b, c =<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span> <span class="comment"># 支持同时对多个变量进行赋值 解包过程？unpack</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>创建变量赋值时， python 解释器做了什么呢<br>
+内存中的变量指向内存中的对象<br>
+ id () 查询内存地址<br>
+<img data-src="en-resource://database/2537:0" alt="ef6dd5b595e9bcec809b3a3342946828.png"></li>
+</ul>
+<h5 id="格式化方法"><a class="markdownIt-Anchor" href="#格式化方法">#</a> 格式化方法</h5>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># %占位符 %d整数 %s 字符串 %f 浮点数</span></span><br><span class="line"><span class="comment"># str的format方法</span></span><br><span class="line">name = <span class="string">&quot;大仙&quot;</span></span><br><span class="line">age = <span class="number">18</span></span><br><span class="line">sex = <span class="string">&quot;男性&quot;</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;%s的年龄是%d，性别为%s&quot;</span> %(name,age,sex))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;&#123;&#125;的年龄是&#123;&#125;，性别为&#123;&#125;&quot;</span>.<span class="built_in">format</span>(name,age,sex))</span><br></pre></td></tr></table></figure>
+<h4 id="数据类型初探"><a class="markdownIt-Anchor" href="#数据类型初探">#</a> 数据类型初探</h4>
+<p><img data-src="en-resource://database/2535:0" alt="509139be8f1ea79226a15fd10ab6d5f3.png"></p>
+<ul>
+<li>type () 查询数据类型</li>
+</ul>
+</div><footer><div class="meta"><span class="item"><span class="icon"><i class="ic i-calendar-check"></i></span><span class="text">Edited on</span><time title="Modified: 2020-03-04 15:13:42" itemprop="dateModified" datetime="2020-03-04T15:13:42+08:00">2020-03-04</time></span></div><div class="reward"><button><i class="ic i-heartbeat"></i>Donate</button><p>Give me a cup of [coffee]~(￣▽￣)~*</p><div id="qr"><div><img data-src="/assets/wechatpay.png" alt="listem WeChat Pay"/><p>WeChat Pay</p></div><div><img data-src="/assets/alipay.png" alt="listem Alipay"/><p>Alipay</p></div></div></div><div id="copyright"><ul><li class="author"><strong>Post author: </strong>listem<i class="ic i-at"><em>@</em></i>Hexo</li><li class="link"><strong>Post link: </strong><a href="http://example.com/2020/02/21/python%E5%9F%BA%E7%A1%80/" title="python基础">http://example.com/2020/02/21/python基础/</a></li><li class="license"><strong>Copyright Notice: </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</a> unless stating additionally.</li></ul></div></footer></article></div><div class="post-nav"><div class="item left"><a href="/2013/07/13/%E5%AD%A6%E4%B9%A0%E7%BC%96%E7%A8%8B%E4%B9%8B%E8%B7%AF/" rel="prev" itemprop="url" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicit31ffoj20zk0m8naf.jpg" title="Hello World"><span class="type">Previous Post</span><h3>Hello World</h3></a></div><div class="item right"><a href="/2020/02/23/%E8%A5%BF%E8%A5%BF%E5%BC%97%E7%A5%9E%E8%AF%9D/" rel="next" itemprop="url" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giciryrr3rj20zk0m8nhk.jpg" title="西西弗神话"><span class="type">Next Post</span><h3>西西弗神话</h3></a></div></div></div><div id="sidebar"><div class="inner"><div class="panels"><div class="inner"><div class="contents panel pjax" data-title="Contents"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#python%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B"><span class="toc-number">1.</span> <span class="toc-text"> Python 核心编程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#python%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9D%97"><span class="toc-number">1.0.1.</span> <span class="toc-text"> python 语言模块</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%AD%E8%A8%80%E7%89%B9%E7%82%B9"><span class="toc-number">1.0.1.1.</span> <span class="toc-text"> 语言特点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BA%94%E7%94%A8%E6%96%B9%E5%90%91"><span class="toc-number">1.0.1.2.</span> <span class="toc-text"> 应用方向</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BC%96%E8%AF%91%E5%99%A8%E5%92%8C%E8%A7%A3%E9%87%8A%E5%99%A8"><span class="toc-number">1.0.1.3.</span> <span class="toc-text"> 编译器和解释器</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#python%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA"><span class="toc-number">1.0.1.4.</span> <span class="toc-text"> python 环境搭建</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#pip%E5%91%BD%E4%BB%A4%E6%93%8D%E4%BD%9C"><span class="toc-number">1.0.1.5.</span> <span class="toc-text"> pip 命令操作</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#pycharm%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8"><span class="toc-number">1.0.1.6.</span> <span class="toc-text"> pycharm 基本使用</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#python%E5%9F%BA%E7%A1%80"><span class="toc-number">1.0.2.</span> <span class="toc-text"> python 基础</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95"><span class="toc-number">1.0.2.1.</span> <span class="toc-text"> 基础语法</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%A0%87%E8%AF%86%E7%AC%A6"><span class="toc-number">1.0.2.1.1.</span> <span class="toc-text"> 标识符</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%85%B3%E9%94%AE%E5%AD%97"><span class="toc-number">1.0.2.1.2.</span> <span class="toc-text"> 关键字</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%B3%A8%E9%87%8A"><span class="toc-number">1.0.2.1.3.</span> <span class="toc-text"> 注释</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%AF%AD%E5%8F%A5%E5%92%8C%E4%BB%A3%E7%A0%81%E5%9D%97"><span class="toc-number">1.0.2.1.4.</span> <span class="toc-text"> 语句和代码块</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-number">1.0.2.1.5.</span> <span class="toc-text"> 字符串</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8F%98%E9%87%8F%E5%92%8C%E5%B8%B8%E9%87%8F"><span class="toc-number">1.0.2.2.</span> <span class="toc-text"> 变量和常量</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%A0%BC%E5%BC%8F%E5%8C%96%E6%96%B9%E6%B3%95"><span class="toc-number">1.0.2.2.1.</span> <span class="toc-text"> 格式化方法</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%88%9D%E6%8E%A2"><span class="toc-number">1.0.2.3.</span> <span class="toc-text"> 数据类型初探</span></a></li></ol></li></ol></li></ol></li></ol></div><div class="related panel pjax" data-title="Related"></div><div class="overview panel" data-title="Overview"><div class="author" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><img class="image" itemprop="image" alt="listem" data-src="/assets/avatar.jpg"/><p class="name" itemprop="name">listem</p><div class="description" itemprop="description"></div></div><nav class="state"><div class="item posts"><a href="/archives/"><span class="count">26</span><span class="name">posts</span></a></div></nav><div class="social"><a href="https://github.com/name" class="item github" rel="noopener" title="https:&#x2F;&#x2F;github.com&#x2F;name" target="_blank"><i class="ic i-github"></i></a></div><div class="menu"><li class="item"><a href="/" rel="section"><i class="ic i-home"></i>Home</a></li><li class="item dropdown"><a href="javascript:void(0);"><i class="ic i-user"></i>About</a><ul class="submenu"><li class="item"><a href="/about/" rel="section"><i class="ic i-user"></i>About This Site</a></li><li class="item"><a href="/admiration/" rel="section"><i class="ic i-coffee"></i>Appreciation</a></li></ul></li><li class="item dropdown"><a href="javascript:void(0);"><i class="ic i-feather"></i>Posts</a><ul class="submenu"><li class="item"><a href="/archives/" rel="section"><i class="ic i-list-alt"></i>Archives</a></li><li class="item"><a href="/categories/" rel="section"><i class="ic i-th"></i>Categories</a></li><li class="item"><a href="/tags/" rel="section"><i class="ic i-tags"></i>Tags</a></li></ul></li><li class="item"><a href="/friends/" rel="section"><i class="ic i-heart"></i>Friends</a></li></div></div></div></div><ul id="quick"><li class="prev pjax"><a href="/2020/02/23/%E8%A5%BF%E8%A5%BF%E5%BC%97%E7%A5%9E%E8%AF%9D/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a></li><li class="up"><i class="ic i-arrow-up"></i></li><li class="down"><i class="ic i-arrow-down"></i></li><li class="next pjax"><a href="/2013/07/13/%E5%AD%A6%E4%B9%A0%E7%BC%96%E7%A8%8B%E4%B9%8B%E8%B7%AF/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a></li><li class="percent"></li></ul></div></div><div class="dimmer"></div></div></main><footer id="footer"><div class="inner"><div class="widgets"><div class="rpost pjax"><h2>Random Posts</h2><ul><li class="item"><div class="breadcrumb"></div><span><a href="/2020/02/21/python%E5%9F%BA%E7%A1%80/">python基础</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2023/06/30/%E4%BB%A3%E8%AF%8D/">Untitled</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2023/06/30/Latex%E8%AF%AD%E6%B3%95/">Untitled</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2023/06/30/%E5%85%89%E9%81%87%E5%A6%82%E4%BD%95%E6%88%90%E4%B8%BA%E4%B8%80%E4%B8%AA%E7%BB%88%E6%9E%81%E9%A3%9E%E6%9A%B4%E9%A3%8E%E7%9C%BC%E5%A4%A7%E4%BD%AC/">Untitled</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2023/06/30/%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E7%AE%97%E6%B3%95%E6%B1%82PI/">Untitled</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2023/06/30/%E8%B1%A1%E4%B8%8E%E9%AA%91%E8%B1%A1%E4%BA%BA/">Untitled</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2023/06/30/labixiaoxin/">Untitled</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2023/06/30/Chapter%201/">Untitled</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2023/06/30/hello-world/">Hello World</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2020/03/25/vscode%E4%BD%BF%E7%94%A8%E5%8F%8AVue%E7%AE%80%E5%8D%95%E6%93%8D%E4%BD%9C/">vscode使用及Vue简单操作</a></span></li></ul></div><div class="rpost pjax"><h2>最新评论</h2><ul class="leancloud-recent-comment" id="new-comment"></ul></div></div><div class="status"><div class="copyright">&copy; 2022 -<span itemprop="copyrightYear">2023</span><span class="with-love"><i class="ic i-sakura rotate"></i></span><span class="author" itemprop="copyrightHolder">listem @ testName</span></div><div class="count"><span class="post-meta-item-icon"><i class="ic i-chart-area"></i></span><span title="Symbols count total">46k words</span><span class="post-meta-divider">|</span><span class="post-meta-item-icon"><i class="ic i-coffee"></i></span><span title="Reading time total">42 mins.</span></div><div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & Theme.<a href="https://github.com/theme-shoka-x/hexo-theme-shokaX/" rel="noopener" target="_blank">ShokaX</a></div></div></div></footer></div><script data-config type="text/javascript">var LOCAL = {
+    path: `2020/02/21/python基础/`,
+    favicon: {
+    show: `(●´3｀●) Here we go again.`,
+    hide: `(´Д｀) It's a disaster!`
+},
+search: {
+placeholder: "Search for Posts",
+    empty: "We didn't find any results for the search: ${query}",
+    stats: "${hits} results found in ${time} ms"
+},
+valine: true,
+    chart: false,
+    copy_tex: false,
+    katex: false,
+    mermaid: false,
+    audio: ``,
+    fancybox: true,
+    nocopy: false,
+    outime: true,
+    template: `&lt;div class=&quot;note warning&quot;&gt;&lt;p&gt;&lt;span class=&quot;label warning&quot;&gt;Article Timeliness Alert&lt;/span&gt;&lt;br&gt;This is an article published {{publish}} days ago and last updated {{updated}} days ago. Some information may have changed, so please be careful to screen it.&lt;/p&gt;&lt;/div&gt;`,
+    quiz: {
+    choice: `Multiple Choice`,
+    multiple: `Multiple Answer`,
+    true_false: `True/False`,
+    essay: `Questions`,
+    gap_fill: `Gap Filling`,
+    mistake: `Wrong Answer`
+},
+ignores: [
+(uri) => uri.includes('#'),
+(uri) => new RegExp(LOCAL.path + '$').test(uri),
+    []
+]
+};
+</script><script src="https://polyfill.io/v3/polyfill.min.js?features=default,fetch"></script><script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-6-M/pace/1.0.2/pace.min.js"></script><script src="https://unpkg.com/theme-shokax-pjax@latest/pjax.shokax.min.js"></script><script src="https://unpkg.com/theme-shokax-anime@latest/anime.shokax.min.js"></script><script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-6-M/algoliasearch/4.12.1/algoliasearch-lite.umd.min.js"></script><script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-6-M/instantsearch.js/4.39.0/instantsearch.production.min.js"></script><script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-6-M/lozad.js/1.16.0/lozad.min.js"></script><script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-6-M/quicklink/2.2.0/quicklink.umd.min.js"></script><script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-6-M/??jquery/3.5.1/jquery.min.js,fancybox/3.5.7/jquery.fancybox.min.js,justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js" async></script><script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-6-M/KaTeX/0.12.0/contrib/copy-tex.min.js" async></script><script src="https://unpkg.com/frappe-charts@1.5.0/dist/frappe-charts.min.iife.js"></script><script src="/js/app.js?v=0.2.10"></script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7}});</script></body></html>
