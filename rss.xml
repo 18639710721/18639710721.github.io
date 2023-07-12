@@ -5,8 +5,48 @@
         <link>http://example.com</link>
         <description></description>
         <language>en</language>
-        <pubDate>Fri, 30 Jun 2023 03:22:00 +0800</pubDate>
-        <lastBuildDate>Fri, 30 Jun 2023 03:22:00 +0800</lastBuildDate>
+        <pubDate>Wed, 12 Jul 2023 10:15:00 +0800</pubDate>
+        <lastBuildDate>Wed, 12 Jul 2023 10:15:00 +0800</lastBuildDate>
+        <item>
+            <guid isPermalink="true">http://example.com/2023/07/12/%E7%AC%94%E8%AE%B0%E7%9B%AE%E5%BD%95%20cs61b%202021%20spring/</guid>
+            <title>笔记目录 cs61b 2021 spring</title>
+            <link>http://example.com/2023/07/12/%E7%AC%94%E8%AE%B0%E7%9B%AE%E5%BD%95%20cs61b%202021%20spring/</link>
+            <pubDate>Wed, 12 Jul 2023 10:15:00 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;目录&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Project&lt;/li&gt;
+&lt;li&gt;Lab&lt;/li&gt;
+&lt;li&gt;Homework&lt;/li&gt;
+&lt;li&gt;课堂笔记&lt;/li&gt;
+&lt;li&gt;Discussion&lt;/li&gt;
+&lt;li&gt;Textbook&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Github: &lt;a href=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;码云：&lt;a href=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;目录&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;&#34;&gt;Project&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;&#34;&gt;Lab&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;&#34;&gt;Homework&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;&#34;&gt;课程笔记&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;&#34;&gt;Discussion&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;project&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#project&#34;&gt;#&lt;/a&gt; Project&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;&#34;&gt;Project 0: 2048&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;lab&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#lab&#34;&gt;#&lt;/a&gt; Lab&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;&#34;&gt;Lab 1 Setup: Setting Up Your Computer&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;&#34;&gt;Lab 1: IntelliJ, Java, git&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;&#34;&gt;Lab 2: JUnit Tests and Debugging&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;homework&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#homework&#34;&gt;#&lt;/a&gt; Homework&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;&#34;&gt;HW 0: A Java Crash Course&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;课程笔记&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#课程笔记&#34;&gt;#&lt;/a&gt; 课程笔记&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;&#34;&gt;Lecture 1. Intro, Hello World Java&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;&#34;&gt;Lecture 2. Defining and Using Classes&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;&#34;&gt;Lecture 3. Testing&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;discussion&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#discussion&#34;&gt;#&lt;/a&gt; Discussion&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;&#34;&gt;Introduction to Java&lt;/a&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">http://example.com/2023/06/30/%E5%BD%A2%E5%AE%B9%E8%AF%8D%E5%92%8C%E5%89%AF%E8%AF%8D/</guid>
             <title></title>
@@ -1293,6 +1333,83 @@ sleep(jiange)
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;Once when I was six years old I saw `magnificent`&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;（/mæɡˈnɪfɪsnt/） picture in a book,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;called True Shories from `Nature`  /ˈneɪtʃə(r)/,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;about the primeval forest. It was a picture of &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;a boa constrictor `in the act of swallowing` an animal.&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; Here is a copy of the drawing&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;- magnificent    adj. 华丽的 宏伟的&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;- in the act of doing sth.  正在做某事&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;- swal·low             v. 吞下   /ˈswɒləʊ/  燕子 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
         </item>
         <item>
+            <guid isPermalink="true">http://example.com/2020/07/13/%E5%AD%A6%E4%B9%A0%E7%BC%96%E7%A8%8B%E4%B9%8B%E8%B7%AF/</guid>
+            <title>Hello World</title>
+            <link>http://example.com/2020/07/13/%E5%AD%A6%E4%B9%A0%E7%BC%96%E7%A8%8B%E4%B9%8B%E8%B7%AF/</link>
+            <pubDate>Mon, 13 Jul 2020 20:46:25 +0800</pubDate>
+            <description><![CDATA[ &lt;h3 id=&#34;打字&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#打字&#34;&gt;#&lt;/a&gt; 打字&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;学会键盘指法
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cudHlwaW5nY2x1Yi5jb20v&#34;&gt;学习 typing 网站&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zc3BhaS5jb20vcG9zdC80NTcyMQ==&#34;&gt;指法图及建议&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;大神指南&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#大神指南&#34;&gt;#&lt;/a&gt; 大神指南&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuemhpaHUuY29tL2xpdmVzLzExMzc0OTQwMzU4OTQ3MzA3NTI=&#34;&gt;学习编程的正确姿势&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;使用谷歌及阅读官方文档 (浏览器书签栏的使用及插件)&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL251dHdvcmsubGl2ZS91c2Vy&#34;&gt;科学上网&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;良好的文件管理习惯&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuemhpaHUuY29tL3F1ZXN0aW9uLzM1MjMyMTM3MC9hbnN3ZXIvOTg5MzM1NjYw&#34;&gt;小白的电脑管理&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC8xOTk1OTI1Mw==&#34;&gt;知乎萧大神的 python 入门教程&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;计算机课程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#计算机课程&#34;&gt;#&lt;/a&gt; 计算机课程&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuYmlsaWJpbGkuY29tL3ZpZGVvL0JWMWI3NDExTDc4NS8/c3BtX2lkX2Zyb209MzMzLjc4OC52aWRlb2NhcmQuMA==&#34;&gt;计算机基础&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuYmlsaWJpbGkuY29tL3ZpZGVvL0JWMUVXNDExdTd0aD9mcm9tPXNlYXJjaCZhbXA7c2VpZD0xNTM0MjEwMTUwOTkxNzU1Njg0&#34;&gt;计算机速成课&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuaWNvdXJzZTE2My5vcmcvY291cnNlLzA4MDlaSlUwMDdBLTE5OTAwMQ==&#34;&gt;mooc C 语言&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuaWNvdXJzZTE2My5vcmcvY291cnNlLzA4MDlaSlUwMTMtMTAwMTU0MTAwMQ==&#34;&gt;mooc Java&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;python&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;博客笔记&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#博客笔记&#34;&gt;#&lt;/a&gt; 博客笔记&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vbmlja2NoZW4xMjEvcC8xMTE2NDM4Ny5odG1s&#34;&gt;嵩天的 mooc&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;工具&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#工具&#34;&gt;#&lt;/a&gt; 工具&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Dev-C++&lt;/li&gt;
+&lt;li&gt;eclipse&lt;/li&gt;
+&lt;li&gt;python&amp;amp;pycharm&lt;/li&gt;
+&lt;li&gt;sublime&lt;/li&gt;
+&lt;li&gt;语雀 cdsn 简书  hexo&lt;/li&gt;
+&lt;li&gt;Clash&lt;/li&gt;
+&lt;li&gt;chrome fire fox 并添加书签管理工具&lt;/li&gt;
+&lt;li&gt;vscode&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;python学习之路&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#python学习之路&#34;&gt;#&lt;/a&gt; python 学习之路&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kb2NzLnB5dGhvbi5vcmcvemgtY24vMy90dXRvcmlhbC9pbmRleC5odG1s&#34;&gt;python 官方文档&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;前端&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#前端&#34;&gt;#&lt;/a&gt; 前端&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2lmZS5iYWlkdS5jb20v&#34;&gt;百度前端学院&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;项目&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#项目&#34;&gt;#&lt;/a&gt; 项目&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuYmlsaWJpbGkuY29tL3ZpZGVvL0JWMWlKNDExaDdBby8/c3BtX2lkX2Zyb209MzMzLjc4OC52aWRlb2NhcmQuNg==&#34;&gt;登录页面的 login 项目&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;&#34;&gt;水滴特效 css&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;sublime 设置默认打开谷歌浏览器教程&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuYmlsaWJpbGkuY29tL3ZpZGVvL0JWMWFFNDExYzc5ai8/c3BtX2lkX2Zyb209MzMzLjc4OC52aWRlb2NhcmQuMQ==&#34;&gt;制作音乐播放器&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;autojs学习&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#autojs学习&#34;&gt;#&lt;/a&gt; auto.js 学习&lt;/h3&gt;
+&lt;h3 id=&#34;按键精灵学习&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#按键精灵学习&#34;&gt;#&lt;/a&gt; 按键精灵学习&lt;/h3&gt;
+&lt;h3 id=&#34;github和个人博客的折腾之路&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#github和个人博客的折腾之路&#34;&gt;#&lt;/a&gt; Github 和个人博客的折腾之路&lt;/h3&gt;
+&lt;h4 id=&#34;图床问题的解决&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#图床问题的解决&#34;&gt;#&lt;/a&gt; 图床问题的解决&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuaXRyaHguY29tLzIwMTkvMDgvMDEvQTI3LWltYWdlLWhvc3Rpbmcv&#34;&gt;github 项目的创建和 picgo 的配置&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuaXRyaHguY29tLzIwMTkvMDIvMTAvQTE4LWZyZWUtY2RuLw==&#34;&gt;jsDelivr+github&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC8yNjYyNTI0OQ==&#34;&gt;GitHub+Hexo 搭建个人网站详细教程 吴润&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;git&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#git&#34;&gt;#&lt;/a&gt; git&lt;/h3&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git init&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git add .&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git commit -m &amp;quot;注释语句&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git remote add origin 地址&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git push -u origin master&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git push -f origin master&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;提交错误就一直&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;hexo clean&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;hexo -g&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;hexo -d&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+ ]]></description>
+        </item>
+        <item>
             <guid isPermalink="true">http://example.com/2020/03/25/vscode%E4%BD%BF%E7%94%A8%E5%8F%8AVue%E7%AE%80%E5%8D%95%E6%93%8D%E4%BD%9C/</guid>
             <title>vscode使用及Vue简单操作</title>
             <link>http://example.com/2020/03/25/vscode%E4%BD%BF%E7%94%A8%E5%8F%8AVue%E7%AE%80%E5%8D%95%E6%93%8D%E4%BD%9C/</link>
@@ -1641,83 +1758,6 @@ index-url = &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9weXBpLnR1bm
 &lt;ul&gt;
 &lt;li&gt;type () 查询数据类型&lt;/li&gt;
 &lt;/ul&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">http://example.com/2013/07/13/%E5%AD%A6%E4%B9%A0%E7%BC%96%E7%A8%8B%E4%B9%8B%E8%B7%AF/</guid>
-            <title>Hello World</title>
-            <link>http://example.com/2013/07/13/%E5%AD%A6%E4%B9%A0%E7%BC%96%E7%A8%8B%E4%B9%8B%E8%B7%AF/</link>
-            <pubDate>Sat, 13 Jul 2013 20:46:25 +0800</pubDate>
-            <description><![CDATA[ &lt;h3 id=&#34;打字&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#打字&#34;&gt;#&lt;/a&gt; 打字&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;学会键盘指法
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cudHlwaW5nY2x1Yi5jb20v&#34;&gt;学习 typing 网站&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zc3BhaS5jb20vcG9zdC80NTcyMQ==&#34;&gt;指法图及建议&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;大神指南&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#大神指南&#34;&gt;#&lt;/a&gt; 大神指南&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuemhpaHUuY29tL2xpdmVzLzExMzc0OTQwMzU4OTQ3MzA3NTI=&#34;&gt;学习编程的正确姿势&lt;/span&gt;
-&lt;ul&gt;
-&lt;li&gt;使用谷歌及阅读官方文档 (浏览器书签栏的使用及插件)&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL251dHdvcmsubGl2ZS91c2Vy&#34;&gt;科学上网&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;良好的文件管理习惯&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuemhpaHUuY29tL3F1ZXN0aW9uLzM1MjMyMTM3MC9hbnN3ZXIvOTg5MzM1NjYw&#34;&gt;小白的电脑管理&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC8xOTk1OTI1Mw==&#34;&gt;知乎萧大神的 python 入门教程&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;计算机课程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#计算机课程&#34;&gt;#&lt;/a&gt; 计算机课程&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuYmlsaWJpbGkuY29tL3ZpZGVvL0JWMWI3NDExTDc4NS8/c3BtX2lkX2Zyb209MzMzLjc4OC52aWRlb2NhcmQuMA==&#34;&gt;计算机基础&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuYmlsaWJpbGkuY29tL3ZpZGVvL0JWMUVXNDExdTd0aD9mcm9tPXNlYXJjaCZhbXA7c2VpZD0xNTM0MjEwMTUwOTkxNzU1Njg0&#34;&gt;计算机速成课&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuaWNvdXJzZTE2My5vcmcvY291cnNlLzA4MDlaSlUwMDdBLTE5OTAwMQ==&#34;&gt;mooc C 语言&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuaWNvdXJzZTE2My5vcmcvY291cnNlLzA4MDlaSlUwMTMtMTAwMTU0MTAwMQ==&#34;&gt;mooc Java&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;python&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;博客笔记&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#博客笔记&#34;&gt;#&lt;/a&gt; 博客笔记&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vbmlja2NoZW4xMjEvcC8xMTE2NDM4Ny5odG1s&#34;&gt;嵩天的 mooc&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;工具&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#工具&#34;&gt;#&lt;/a&gt; 工具&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;Dev-C++&lt;/li&gt;
-&lt;li&gt;eclipse&lt;/li&gt;
-&lt;li&gt;python&amp;amp;pycharm&lt;/li&gt;
-&lt;li&gt;sublime&lt;/li&gt;
-&lt;li&gt;语雀 cdsn 简书  hexo&lt;/li&gt;
-&lt;li&gt;Clash&lt;/li&gt;
-&lt;li&gt;chrome fire fox 并添加书签管理工具&lt;/li&gt;
-&lt;li&gt;vscode&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;python学习之路&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#python学习之路&#34;&gt;#&lt;/a&gt; python 学习之路&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kb2NzLnB5dGhvbi5vcmcvemgtY24vMy90dXRvcmlhbC9pbmRleC5odG1s&#34;&gt;python 官方文档&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;前端&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#前端&#34;&gt;#&lt;/a&gt; 前端&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2lmZS5iYWlkdS5jb20v&#34;&gt;百度前端学院&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;项目&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#项目&#34;&gt;#&lt;/a&gt; 项目&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuYmlsaWJpbGkuY29tL3ZpZGVvL0JWMWlKNDExaDdBby8/c3BtX2lkX2Zyb209MzMzLjc4OC52aWRlb2NhcmQuNg==&#34;&gt;登录页面的 login 项目&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;&#34;&gt;水滴特效 css&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;sublime 设置默认打开谷歌浏览器教程&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuYmlsaWJpbGkuY29tL3ZpZGVvL0JWMWFFNDExYzc5ai8/c3BtX2lkX2Zyb209MzMzLjc4OC52aWRlb2NhcmQuMQ==&#34;&gt;制作音乐播放器&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;autojs学习&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#autojs学习&#34;&gt;#&lt;/a&gt; auto.js 学习&lt;/h3&gt;
-&lt;h3 id=&#34;按键精灵学习&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#按键精灵学习&#34;&gt;#&lt;/a&gt; 按键精灵学习&lt;/h3&gt;
-&lt;h3 id=&#34;github和个人博客的折腾之路&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#github和个人博客的折腾之路&#34;&gt;#&lt;/a&gt; Github 和个人博客的折腾之路&lt;/h3&gt;
-&lt;h4 id=&#34;图床问题的解决&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#图床问题的解决&#34;&gt;#&lt;/a&gt; 图床问题的解决&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuaXRyaHguY29tLzIwMTkvMDgvMDEvQTI3LWltYWdlLWhvc3Rpbmcv&#34;&gt;github 项目的创建和 picgo 的配置&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuaXRyaHguY29tLzIwMTkvMDIvMTAvQTE4LWZyZWUtY2RuLw==&#34;&gt;jsDelivr+github&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC8yNjYyNTI0OQ==&#34;&gt;GitHub+Hexo 搭建个人网站详细教程 吴润&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;git&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#git&#34;&gt;#&lt;/a&gt; git&lt;/h3&gt;
-&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git init&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git add .&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git commit -m &amp;quot;注释语句&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git remote add origin 地址&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git push -u origin master&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git push -f origin master&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;提交错误就一直&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;hexo clean&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;hexo -g&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;hexo -d&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
  ]]></description>
         </item>
     </channel>
